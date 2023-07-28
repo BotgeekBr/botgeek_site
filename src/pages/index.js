@@ -3,6 +3,9 @@ import {Box} from "@mui/material"
 import { styled } from '@mui/material/styles';
 import Inicio from "./inicio"
 import Header from "../components/header";
+import Solucoes from "./solucoes"
+import Sobre from "./sobre"
+import Contato from "./contato"
 
 const BoxInicio= styled(Box)(({ theme }) => ({
     
@@ -15,10 +18,9 @@ function PageHome() {
     <BoxInicio >
       <Header></Header>
       <Inicio></Inicio>
-      <Inicio></Inicio>
-      <Inicio></Inicio>
-      <Inicio></Inicio>
-      <Inicio></Inicio>
+      <Solucoes></Solucoes>
+      <Sobre></Sobre>
+      <Contato></Contato>
     </BoxInicio>
   );
 }

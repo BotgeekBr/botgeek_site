@@ -8,46 +8,18 @@ import backgroundImagePage from "../../assets/technology-background-abstract-dig
 const BoxInicio= styled(Box)(({ theme }) => ({
     width: "100%",
     height: "100vh",
-    backgroundImage: `url(${backgroundImagePage})`,
+    background: "white",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginTop: "-30px",
-    [theme.breakpoints.down('sm')]: {
-      marginTop: "0px",
-    }
+   
   }));
   
-const SectionOne = styled(Box)(({ theme }) => ({
-  width: "100%",
-  maxWidth: "45%",
-  height: "100vh",
-  background: "linear-gradient(180deg, rgba(0, 0, 0, 0.8) 40%, rgba(13, 18, 11, 0.4) 80%)",
-  display: "flex",
-  flexDirection: "row",
-  justifyContent: "center",
-  alignItems: "center,",
-  textAlign: "right",
-  zIndex: 999999,
- 
-  backdropFilter: "blur(10px)",
-  [theme.breakpoints.down('sm')]: {
-    zIndex: 999,
-    maxWidth: "80%",
-    marginTop: "0px",
-  }
-}));
 
-const SectionTwo = styled(Box)(({ theme }) => ({
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  padding: 10,
-  
-}));
+
 
 const buttons = [
   <Button key="three" sx={{mb: 1,background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none" , borderColor: "none", color: "white", fontWeight: 700}}>01</Button>,
@@ -58,17 +30,10 @@ const buttons = [
 
   
 
-function Inicio() {
+function Contato() {
   return (
     <BoxInicio >
-      <SectionOne>
-
-      </SectionOne>
-      <SectionTwo sx={{
-    
-    
-  }}> 
-        <ButtonGroup
+       <ButtonGroup
           orientation="vertical"
           aria-label="vertical contained button group"
           variant="outlined"
@@ -81,12 +46,11 @@ function Inicio() {
         >
           {buttons}
         </ButtonGroup>  
-      </SectionTwo>
     </BoxInicio>
   );
 }
 
-export default Inicio;
+export default Contato;
 
 
 
