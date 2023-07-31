@@ -12,6 +12,7 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Instagram } from '@mui/icons-material';
 
 const pages = ['Inicio', 'Sobrre Nós', 'Soluções', 'Clientes',  'Contato'  ];
 
@@ -36,7 +37,7 @@ function Header() {
   };
 
   return (
-    <AppBar position="fixed" sx={{background: "black",zIndex: 9999}}>
+    <AppBar position="fixed" sx={{background: "black",zIndex: 9999,borderBottom: "1px solid #C4F015"}}>
       <Container maxWidth="xl"  sx={{zIndex: 9999}}>
         <Toolbar disableGutters  sx={{zIndex: 9999}}>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
@@ -131,8 +132,24 @@ function Header() {
                 </MenuItem>
               ))}
             </Menu>
+
+
+            
           </Box>
+         
+          <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+             
+              color="inherit"
+              sx={{marginLeft: "10%"}}
+            >
+              <Instagram style={{color: "#C4F015"}} />
+            </IconButton>
         </Toolbar>
+        
       </Container>
     </AppBar>
   );
