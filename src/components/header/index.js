@@ -13,6 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Instagram } from '@mui/icons-material';
+import LogoBootGeek from "../../assets/BOT-0001-23 Brand_VF-06.png"
 
 const pages = ['Inicio', 'Sobrre Nós', 'Soluções', 'Clientes',  'Contato'  ];
 
@@ -37,48 +38,38 @@ function Header() {
   };
 
   return (
-    <AppBar position="fixed" sx={{background: "black",zIndex: 9999,borderBottom: "1px solid #C4F015"}}>
+    <AppBar position="fixed" sx={{background: "rgba(0,0,0,0.7)",zIndex: 9999,borderBottom: "1px solid #C4F015"}}>
       <Container maxWidth="xl"  sx={{zIndex: 9999}}>
         <Toolbar disableGutters  sx={{zIndex: 9999}}>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+         
+          
+        <IconButton
+                size="large"
+                aria-label="account of current user"
+                aria-controls="menu-appbar"
+                aria-haspopup="true"
+              
+                color="inherit"
+         
+              >
+              <Box
+                component="img"
+                  sx={{
+                    height: "100%",
+                    width: "100%",
+                  
+                    maxWidth: { xs: 50, md: 50,sm:50 },
+                    
+                  }}
+                alt="The house from the offer."
+                src={LogoBootGeek}
+              />
+              </IconButton>
+          
+          
 
           
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            LOGO
-          </Typography>
+          
          
 
           <Box sx={{ flexGrow:1 }}>

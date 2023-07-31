@@ -18,8 +18,9 @@ function PageHome() {
     <BoxInicio >
       <Header></Header>
       <Inicio></Inicio>
-      <Solucoes></Solucoes>
       <Sobre></Sobre>
+      <Solucoes></Solucoes>
+  
       <Contato></Contato>
     </BoxInicio>
   );
