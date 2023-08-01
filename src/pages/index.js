@@ -19,7 +19,7 @@ function PageHome() {
       <Header></Header>
       <Inicio></Inicio>
       <Sobre></Sobre>
-      {/* <Solucoes></Solucoes> */}
+      <Solucoes></Solucoes>
   
       <Contato></Contato>
     </BoxInicio>
