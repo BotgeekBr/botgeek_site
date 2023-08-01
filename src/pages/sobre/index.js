@@ -10,7 +10,7 @@ import Visao from "../../assets/visao.png"
 
 const BoxInicio= styled(Box)(({ theme }) => ({
     width: "100%",
-    height: "100vh",
+
     background: "white",
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
