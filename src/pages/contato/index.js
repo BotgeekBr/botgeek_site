@@ -1,52 +1,70 @@
-import React from "react";
+import * as React from 'react';
 import {Box} from "@mui/material"
 import { alpha,styled } from '@mui/material/styles';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
-import backgroundImagePage from "../../assets/technology-background-abstract-digital-technology-network-background-illustration-futuristic-point-wave.jpg"
+import ImageBoxDesenvolvimento from "../../assets/digital-cyberspace-data-network-connections.jpg"
+
+import TextField from '@mui/material/TextField';
 
 const BoxInicio= styled(Box)(({ theme }) => ({
-    width: "100%",
-    height: "100vh",
-    background: "white",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+  width: "100%",
+  height: "100vh",  
+  display: "flex",
+  flexDirection: "row",
+  justifyContent: "center",
+
+ 
    
   }));
   
 
 
 
-const buttons = [
-  <Button key="three" sx={{mb: 1,background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none" , borderColor: "none", color: "white", fontWeight: 700}}>01</Button>,
-  <Button key="three" sx={{mb: 1,background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none" , borderColor: "none", color: "white", fontWeight: 700}}>02</Button>,
-  <Button key="three" sx={{mb: 1,background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none" , borderColor: "none", color: "white", fontWeight: 700}}>03</Button>,
-  <Button key="three" sx={{mb: 1,background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none" , borderColor: "none", color: "white", fontWeight: 700}}>04</Button>,
-];
 
-  
 
 function Contato() {
+
+  const [name, setName] = React.useState('Cat in the Hat');
+
   return (
     <div name="" id="contato">
       <BoxInicio >
-        <ButtonGroup
-            orientation="vertical"
-            aria-label="vertical contained button group"
-            variant="outlined"
-            sx={{ 
-              backgroundColor: alpha( "#0D120B", 0.6),
-              padding: 1,
-              backdropFilter: "blur(10px)",
-              borderRadius: 3
-          }}
-          >
-            {buttons}
-          </ButtonGroup>  
+          <Box sx={{display: "flex", flexDirection: "column", padding: 5, background: "rgba(0,0,0,0.1)", height: "50%"}}>
+                <TextField
+                    id="outlined-controlled"
+                    label="Controlled"
+                    value={name}
+                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                      setName(event.target.value);
+                    }}
+                  />
+                  <TextField
+                  sx={{marginTop: 2}}
+                    id="outlined-controlled"
+                    label="Controlled"
+                    value={name}
+                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
+                      setName(event.target.value);
+                    }}
+      />
+                </Box>
+          <Box>
+            <Box
+                  component="img"
+                  sx={{
+                    height: "100%",
+                    maxHeight: { xl: 600 , md: 250, sm: "100%" },
+                    width: 600,
+                    maxWidth: { xl: 600, md: 250, sm: "100%" },
+                    borderRadius: 5
+                  }}
+                  alt="The house from the offer."
+
+                  src={ImageBoxDesenvolvimento}
+                />
+              
+          </Box>
       </BoxInicio>
     </div>
   );
