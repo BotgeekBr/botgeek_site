@@ -234,13 +234,13 @@ etc..</Typography>
 
           <CustomTabPanel value={value} index={1} dir={theme.direction}>
           <BoxTabs >
-              <Box margin={3}>
+          <Box margin={3}>
                 <Box
                   component="img"
                   sx={{
-                    height: 500,
+                    height: "100%",
                     maxHeight: { xl: 500 , md: 250, sm: "100%" },
-                    width: 500,
+                    width: 300,
                     maxWidth: { xl: 300, md: 250, sm: 150 },
                     borderRadius: 5
                   }}
@@ -319,13 +319,13 @@ erros</Typography>
 
           <CustomTabPanel value={value} index={2} dir={theme.direction}>
             <BoxTabs >
-              <Box margin={3}>
+            <Box margin={3}>
                 <Box
                   component="img"
                   sx={{
-                    height: 500,
+                    height: "100%",
                     maxHeight: { xl: 500 , md: 250, sm: "100%" },
-                    width: 500,
+                    width: 300,
                     maxWidth: { xl: 300, md: 250, sm: 150 },
                     borderRadius: 5
                   }}
@@ -405,13 +405,13 @@ um orçamento sobre sua integração, rápido e fácil</Typography>
 
           <CustomTabPanel value={value} index={3} dir={theme.direction}>
           <BoxTabs >
-              <Box margin={3}>
+          <Box margin={3}>
                 <Box
                   component="img"
                   sx={{
-                    height: 500,
+                    height: "100%",
                     maxHeight: { xl: 500 , md: 250, sm: "100%" },
-                    width: 500,
+                    width: 300,
                     maxWidth: { xl: 300, md: 250, sm: 150 },
                     borderRadius: 5
                   }}

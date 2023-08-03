@@ -6,6 +6,7 @@ import Header from "../components/header";
 import Solucoes from "./solucoes"
 import Sobre from "./sobre"
 import Contato from "./contato"
+import Clientes from "./clientes";
 
 const BoxInicio= styled(Box)(({ theme }) => ({
     
@@ -20,7 +21,7 @@ function PageHome() {
       <Inicio></Inicio>
       <Sobre></Sobre>
       <Solucoes></Solucoes>
-  
+      <Clientes></Clientes>
       <Contato></Contato>
     </BoxInicio>
   );
