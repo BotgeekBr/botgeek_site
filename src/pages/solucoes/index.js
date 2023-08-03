@@ -100,6 +100,7 @@ function Solucoes() {
 
 
   return (
+    <div name="solucoes" id="solucoes">
     <BoxInicio >
        
           <BoxDesktop>
@@ -486,6 +487,7 @@ público-alvo, suas expectativas e desejos.</Typography>
 
       </Box>
     </BoxInicio>
+    </div>
   );
 }
 

@@ -229,6 +229,7 @@ function Clientes() {
   const classes = useStyles()
   
   return (
+    <div id="clientes" name="clientes">
     <BoxInicio >
      
        <Carousel classeName={classes.root} >
@@ -237,6 +238,7 @@ function Clientes() {
             }
        </Carousel>
     </BoxInicio>
+    </div>
   );
 }
 

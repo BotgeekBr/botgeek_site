@@ -18,11 +18,11 @@ function PageHome() {
   return (
     <BoxInicio >
       <Header id=""></Header>
-      <Inicio   id="inicio"  ></ Inicio>
-      <Sobre    id="sobre"></Sobre>
-      <Solucoes id="solucoes"></Solucoes>
-      <Clientes id="clientes"></Clientes>
-      <Contato  id="contato"></Contato>
+      <Inicio    ></ Inicio>
+      <Sobre   ></Sobre>
+      <Solucoes ></Solucoes>
+      <Clientes ></Clientes>
+      <Contato  ></Contato>
     </BoxInicio>
   );
 }

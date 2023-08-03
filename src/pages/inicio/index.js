@@ -83,7 +83,8 @@ function Inicio() {
 
   const theme = useTheme()
   return (
-    <BoxInicio >
+    <div name="inicio" id="inicio">
+      <BoxInicio >
       <SectionOne>
       
           <Box paddingTop={6} sx={{paddingLeft: "15%", paddingRight: "15%"}} >
@@ -161,6 +162,7 @@ construindo sonhos.</Typography>
         </ButtonGroup>  
       </SectionTwo>
     </BoxInicio>
+    </div>
   );
 }
 

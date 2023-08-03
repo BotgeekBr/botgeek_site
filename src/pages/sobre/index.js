@@ -77,6 +77,7 @@ const BoxInicio= styled(Box)(({ theme }) => ({
   })); 
 function Sobre() {
   return (
+    <div name="sobre" id="sobre">
     <BoxInicio >
 
       <BoxDivs sx={{padding: 15, marginTop: 10}}>
@@ -157,6 +158,7 @@ function Sobre() {
       </BoxDivs>
      
     </BoxInicio>
+    </div>
   );
 }
 

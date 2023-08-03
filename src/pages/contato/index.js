@@ -32,21 +32,23 @@ const buttons = [
 
 function Contato() {
   return (
-    <BoxInicio >
-       <ButtonGroup
-          orientation="vertical"
-          aria-label="vertical contained button group"
-          variant="outlined"
-          sx={{ 
-            backgroundColor: alpha( "#0D120B", 0.6),
-            padding: 1,
-            backdropFilter: "blur(10px)",
-            borderRadius: 3
-        }}
-        >
-          {buttons}
-        </ButtonGroup>  
-    </BoxInicio>
+    <div name="" id="contato">
+      <BoxInicio >
+        <ButtonGroup
+            orientation="vertical"
+            aria-label="vertical contained button group"
+            variant="outlined"
+            sx={{ 
+              backgroundColor: alpha( "#0D120B", 0.6),
+              padding: 1,
+              backdropFilter: "blur(10px)",
+              borderRadius: 3
+          }}
+          >
+            {buttons}
+          </ButtonGroup>  
+      </BoxInicio>
+    </div>
   );
 }
 
