@@ -17,12 +17,12 @@ const BoxInicio= styled(Box)(({ theme }) => ({
 function PageHome() {
   return (
     <BoxInicio >
-      <Header></Header>
-      <Inicio></Inicio>
-      <Sobre></Sobre>
-      <Solucoes></Solucoes>
-      <Clientes></Clientes>
-      <Contato></Contato>
+      <Header id=""></Header>
+      <Inicio   id="inicio"  ></ Inicio>
+      <Sobre    id="sobre"></Sobre>
+      <Solucoes id="solucoes"></Solucoes>
+      <Clientes id="clientes"></Clientes>
+      <Contato  id="contato"></Contato>
     </BoxInicio>
   );
 }

@@ -2,13 +2,18 @@ import React from "react";
 import {Box, Card, CardActionArea, CardContent, CardMedia, Typography} from "@mui/material"
 import {  styled } from '@mui/material/styles';
 
+import ImageBoxDesenvolvimento from "../../assets/digital-cyberspace-data-network-connections.jpg"
 
 import Carousel from "react-material-ui-carousel";
 
 
 const BoxInicio= styled(Box)(({ theme }) => ({
     width: "100%",
-    height: "100vh",
+    height: "100vh",  
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+  
    
   
   }));
@@ -83,89 +88,134 @@ const BoxInicio= styled(Box)(({ theme }) => ({
       <div classes={classes.root} >
          <Box sx={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}>
 
-         <Card className={`${classes.root} ${classes.card}`}>
-          <CardActionArea>
-            <CardMedia
-              className={classes.media}
-              image={props.item.imgPath}
-              title="Contemplative Reptile"
-            />
+          <Card className={`${classes.root} ${classes.card}`} sx={{margin: 2}}>
+          <CardActionArea>{console.log(props.item.imgPath)}
+          <Box
+                  component="img"
+                  sx={{
+                    height: "100%",
+                    maxHeight: { xl: 500 , md: 250, sm: "100%" },
+                    width: 300,
+                    maxWidth: { xl: 300, md: 250, sm: 150 },
+                    borderRadius: 5
+                  }}
+                
+
+                  src={ImageBoxDesenvolvimento}
+                />
+
+
+
               <CardContent>
                 <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
-                 ${props.item.c}
+                 EMPRESA JOSE DE AGOSTO
                 </Typography>
-                <Typography className={`${classes.typo} ${classes.mx}`} variant="h5" color="inherit" component="h3">
-                  {props.item.label}
+                <Typography className={`${classes.typo} ${classes.mx}`} component="p" color="inherit" >
+                  COMENTARIO
                 </Typography>
-                <Typography  className={classes.typo} color="textSecondary" component="p">
-                  {props.item.desc}
+                <Typography  className={`${classes.typo} ${classes.mx}`} color="textSecondary" variant="h7" component="h3">
+                  Trabalham muito bem
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          
+          <Card className={`${classes.root} ${classes.card}`}  sx={{margin: 2}}>
+          <CardActionArea>{console.log(props.item.imgPath)}
+          <Box
+                  component="img"
+                  sx={{
+                    height: "100%",
+                    maxHeight: { xl: 500 , md: 250, sm: "100%" },
+                    width: 300,
+                    maxWidth: { xl: 300, md: 250, sm: 150 },
+                    borderRadius: 5
+                  }}
+                
+
+                  src={ImageBoxDesenvolvimento}
+                />
+
+
+
+              <CardContent>
+                <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
+                 EMPRESA JOSE DE AGOSTO
+                </Typography>
+                <Typography className={`${classes.typo} ${classes.mx}`} component="p" color="inherit" >
+                  COMENTARIO
+                </Typography>
+                <Typography  className={`${classes.typo} ${classes.mx}`} color="textSecondary" variant="h7" component="h3">
+                  Trabalham muito bem
                 </Typography>
               </CardContent>
             </CardActionArea>
           </Card>
 
-          <Card className={`${classes.root} ${classes.card}`}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={props.item.imgPath}
-                  title="Contemplative Reptile"
+          <Card className={`${classes.root} ${classes.card}`}  sx={{margin: 2}}>
+          <CardActionArea>{console.log(props.item.imgPath)}
+          <Box
+                  component="img"
+                  sx={{
+                    height: "100%",
+                    maxHeight: { xl: 500 , md: 250, sm: "100%" },
+                    width: 300,
+                    maxWidth: { xl: 300, md: 250, sm: 150 },
+                    borderRadius: 5
+                  }}
+                
+
+                  src={ImageBoxDesenvolvimento}
                 />
-                  <CardContent>
-                    <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
-                    ${props.item.c}
-                    </Typography>
-                    <Typography className={`${classes.typo} ${classes.mx}`} variant="h5" color="inherit" component="h3">
-                      {props.item.label}
-                    </Typography>
-                    <Typography  className={classes.typo} color="textSecondary" component="p">
-                      {props.item.desc}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
+
+
+
+              <CardContent>
+                <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
+                 EMPRESA JOSE DE AGOSTO
+                </Typography>
+                <Typography className={`${classes.typo} ${classes.mx}`} component="p" color="inherit" >
+                  COMENTARIO
+                </Typography>
+                <Typography  className={`${classes.typo} ${classes.mx}`} color="textSecondary" variant="h7" component="h3">
+                  Trabalham muito bem
+                </Typography>
+              </CardContent>
+            </CardActionArea>
           </Card>
 
-          <Card className={`${classes.root} ${classes.card}`}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={props.item.imgPath}
-                  title="Contemplative Reptile"
-                />
-                  <CardContent>
-                    <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
-                    ${props.item.c}
-                    </Typography>
-                    <Typography className={`${classes.typo} ${classes.mx}`} variant="h5" color="inherit" component="h3">
-                      {props.item.label}
-                    </Typography>
-                    <Typography  className={classes.typo} color="textSecondary" component="p">
-                      {props.item.desc}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-          </Card>
+          <Card className={`${classes.root} ${classes.card}`}  sx={{margin: 2}}>
+          <CardActionArea>{console.log(props.item.imgPath)}
+          <Box
+                  component="img"
+                  sx={{
+                    height: "100%",
+                    maxHeight: { xl: 500 , md: 250, sm: "100%" },
+                    width: 300,
+                    maxWidth: { xl: 300, md: 250, sm: 150 },
+                    borderRadius: 5
+                  }}
+                
 
-          <Card className={`${classes.root} ${classes.card}`}>
-              <CardActionArea>
-                <CardMedia
-                  className={classes.media}
-                  image={props.item.imgPath}
-                  title="Contemplative Reptile"
+                  src={ImageBoxDesenvolvimento}
                 />
-                  <CardContent>
-                    <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
-                    ${props.item.c}
-                    </Typography>
-                    <Typography className={`${classes.typo} ${classes.mx}`} variant="h5" color="inherit" component="h3">
-                      {props.item.label}
-                    </Typography>
-                    <Typography  className={classes.typo} color="textSecondary" component="p">
-                      {props.item.desc}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
+
+
+
+              <CardContent>
+                <Typography className={classes.typo} gutterBottom variant="h6" component="h6" color="secondary">
+                 EMPRESA JOSE DE AGOSTO
+                </Typography>
+                <Typography className={`${classes.typo} ${classes.mx}`} component="p" color="inherit" >
+                  COMENTARIO
+                </Typography>
+                <Typography  className={`${classes.typo} ${classes.mx}`} color="textSecondary" variant="h7" component="h3">
+                  Trabalham muito bem
+                </Typography>
+              </CardContent>
+            </CardActionArea>
           </Card>
+          
          </Box>
      </div>
     )

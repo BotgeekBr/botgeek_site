@@ -14,8 +14,32 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { Instagram } from '@mui/icons-material';
 import LogoBootGeek from "../../assets/BOT-0001-23 Brand_VF-06.png"
+import { Link } from '@mui/material';
 
-const pages = ['Inicio', 'Sobrre Nós', 'Soluções', 'Clientes',  'Contato'  ];
+const pages = [
+
+  {
+    id: 'inicio',
+    name: 'Inicio'
+  },
+  {
+    id: 'sobre',
+    name: 'Sobrre Nós'
+  },
+  {
+    id: 'solucoes',
+    name: 'Soluções'
+  },
+  {
+    id: 'clientes',
+    name: 'Clientes'
+  },
+  {
+    id: 'contato',
+    name: 'Contato'
+  },
+  
+  ];
 
 
 function Header() {
@@ -78,11 +102,12 @@ function Header() {
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
+                key={page.id}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+
               >
-                {page}
+            <Link href={`#${page.id}`} style={{textDecoration: "none",color: "white"}}><Typography textAlign="center" style={{textDecoration: "none"}}>{page.name}</Typography></Link>
               </Button>
             ))}
           </Box>
@@ -118,8 +143,8 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <Link href={`#${page.id}`}><Typography textAlign="center" style={{textDecoration: "none"}}>{page.name}</Typography></Link>
                 </MenuItem>
               ))}
             </Menu>
