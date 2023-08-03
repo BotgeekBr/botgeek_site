@@ -24,7 +24,10 @@ function Copyright() {
 }
 
 const BoxFooter = styled(Box)((theme) => ({
-  
+  width: "100%",
+    height: "100vh",
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "rgba(0,0,0,1)",
     // marginTop: theme.spacing(8),
     padding: 6
@@ -37,7 +40,7 @@ export default function Footer(props) {
 
   return (
     <BoxFooter >
-      <Container maxWidth="lg" sx={{display: 'flex', flexDirection: 'row', padding: 6, width: "100%"}}>
+      <Container maxWidth="lg" sx={{display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: "center",padding: 6, width: "100%", height: "100%"}}>
         <Box sx={{color: 'white',width: "100%"}} >
               <nav aria-label="main mailbox folders">
               <List >
