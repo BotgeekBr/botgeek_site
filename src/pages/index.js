@@ -7,7 +7,7 @@ import Solucoes from "./solucoes"
 import Sobre from "./sobre"
 import Contato from "./contato"
 import Clientes from "./clientes";
-
+import Footer from '../components/footer'
 const BoxInicio= styled(Box)(({ theme }) => ({
     
   }));
@@ -23,6 +23,7 @@ function PageHome() {
       <Solucoes ></Solucoes>
       <Clientes ></Clientes>
       <Contato  ></Contato>
+      <Footer></Footer>
     </BoxInicio>
   );
 }
