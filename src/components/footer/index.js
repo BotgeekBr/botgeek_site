@@ -24,7 +24,7 @@ function Copyright() {
 }
 
 const BoxFooter = styled(Box)((theme) => ({
-  width: "100%",
+  
     height: "100vh",
     justifyContent: "center",
     alignItems: "center",
@@ -50,7 +50,7 @@ export default function Footer(props) {
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemIcon>
-                      <EmailIcon  sx={{color: 'white'}}/>
+                      <EmailIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
                     <ListItemText  primary="contato@botgeek.com.br" />
                   </ListItemButton>
@@ -59,7 +59,7 @@ export default function Footer(props) {
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemIcon>
-                      <WhatsAppIcon  sx={{color: 'white'}}/>
+                      <WhatsAppIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
                     <ListItemText primary="(41) 9991 722 778" />
                   </ListItemButton>
@@ -68,7 +68,7 @@ export default function Footer(props) {
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemIcon>
-                      <InstagramIcon  sx={{color: 'white'}}/>
+                      <InstagramIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
                     <ListItemText primary="@botGeek_" />
                   </ListItemButton>
@@ -83,9 +83,9 @@ export default function Footer(props) {
               <ListItem disablePadding sx={{marginTop: 8}}>
                   <ListItemButton>
                     <ListItemIcon>
-                      <CopyrightIcon  sx={{color: 'white',fontSize: 15}} />
+                      <CopyrightIcon  sx={{color: 'rgba(255,255,255,0.7)',fontSize: 15}} />
                     </ListItemIcon>
-                    <ListItemText primaryTypographyProps={{fontSize: '10px', marginLeft: "-20px"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
+                    <ListItemText primaryTypographyProps={{fontSize: '10px', marginLeft: "-20px",color: "rgba(255,255,255,0.7)"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
                   </ListItemButton>
                 </ListItem>
               
@@ -142,10 +142,9 @@ export default function Footer(props) {
                   <Box sx={{ display: "flex",justifyContent:"center", alignItems:'center', color: 'white'}}>
                     <ListItem disablePadding sx={{marginTop: 8}}>
                         <ListItemButton>
-                          <ListItemIcon>
-                            <CopyrightIcon  sx={{color: 'white',fontSize: 15}} />
-                          </ListItemIcon>
-                          <ListItemText primaryTypographyProps={{fontSize: '10px', marginLeft: "-20px"}}    primary="Desenvolvido por: Lança Design e Botgeek" ></ListItemText>
+                        <ListItemText primaryTypographyProps={{fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5)'}}    primary="Desenvolvido por: " ></ListItemText>
+
+                          <ListItemText primaryTypographyProps={{marginLeft:1,fontSize: '10px', color: 'rgba(255,255,255,1)'}}    primary=" Lança Design e Botgeek" ></ListItemText>
                         </ListItemButton>
                       </ListItem>
                   </Box>   

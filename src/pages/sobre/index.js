@@ -9,7 +9,7 @@ import Valores from "../../assets/valores.png"
 import Visao from "../../assets/visao.png"
 
 const BoxInicio= styled(Box)(({ theme }) => ({
-    width: "100%",
+    width: "90%",
 
     background: "white",
     backgroundSize: "cover",
@@ -78,6 +78,8 @@ const BoxInicio= styled(Box)(({ theme }) => ({
 function Sobre() {
   return (
     <div name="sobre" id="sobre">
+            <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+
     <BoxInicio >
 
       <BoxDivs sx={{padding: 15, marginTop: 10}}>
@@ -158,6 +160,7 @@ function Sobre() {
       </BoxDivs>
      
     </BoxInicio>
+    </Box>
     </div>
   );
 }

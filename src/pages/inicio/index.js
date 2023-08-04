@@ -20,7 +20,7 @@ import HeaderText from '../../assets/Novo_Projeto__10_-removebg-preview.png'
 const BoxInicio= styled(Box)(({ theme }) => ({
     width: "100%",
     height: "100vh",
-    backgroundImage: `url(${backgroundImagePageFour})`,
+    backgroundImage: `url(${backgroundImagePageOne})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center",
