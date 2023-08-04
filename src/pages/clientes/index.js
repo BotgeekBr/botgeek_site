@@ -11,7 +11,7 @@ const BoxInicio= styled(Box)(({ theme }) => ({
     width: "100%",
     height: "100vh",  
     display: "flex",
-    flexDirection: "column",
+    flexDirection: "row",
     justifyContent: "center",
   
    
@@ -86,7 +86,7 @@ const BoxInicio= styled(Box)(({ theme }) => ({
    const classes = useStyles()
     return (
       <div classes={classes.root} >
-         <Box sx={{display: "flex", flexDirection: {md:"column"}, justifyContent: "center", alignItems: "center"}}>
+         <Box sx={{display: "flex", justifyContent: "center", alignItems: "center"}}>
 
           <Card className={`${classes.root} ${classes.card}`} sx={{margin: 2}}>
           <CardActionArea>{console.log(props.item.imgPath)}

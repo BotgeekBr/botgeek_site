@@ -58,15 +58,16 @@ function Contato() {
             
 
             <Grid container spacing={2} sx={{ width: "100%",display: "flex", justifyContent: "center", alignItems: "center"}}>
-              <Grid item xs={2}></Grid>
+              <Grid item xs={2} md={12} sm={12} ></Grid>
 
-              <Grid item xl={3} md={12} gap={2} sx={{width: "100%" ,height: "100%",display: "flex", justifyContent: "center", alignItems: "center"}} >
-                  <Box sx={{width: "100%" ,display: "flex", flexDirection: "column", padding: 5, background: "rgba(0,0,0,0.1)", height: "50%"}} gap={2}>
+              <Grid item xl={3} md={6} sm={12} gap={2} sx={{width: "100%" ,height: "100%",display: "flex", justifyContent: "center", alignItems: "center"}} >
+                  <Box sx={{ padding: 5, background: "rgba(0,0,0,0.1)",display: "flex",flexDirection: "column",justifyContent: "center", alignItems: "center"}} gap={1} >
 
                     <Typography variant='h5'>Entre em contato para mais informações!</Typography>
                     <Typography variant='p'>Preencha todos os dados solicitados no formulário.</Typography>
                     <Typography variant='p'>Aguarde que logo responderemos sua solicitação de contato.</Typography>
                     <TextField
+                    fullWidth
                       id="outlined-controlled"
                       label="Nome"
                       value={name}
@@ -77,6 +78,7 @@ function Contato() {
                       }}
                     />
                     <TextField
+                     fullWidth
                       id="outlined-controlled"
                       label="Telefone"
                       value={name}
@@ -86,6 +88,7 @@ function Contato() {
                       }}
                     /> 
                     <TextField
+                     fullWidth
                       id="outlined-controlled"
                       label="Email"
                       sx={{background: "white"}}
@@ -95,6 +98,7 @@ function Contato() {
                       }}
                     /> 
                     <TextField
+                     fullWidth
                       id="outlined-controlled"
                       label="Menssagem"
                       sx={{background: "white"}}
@@ -106,7 +110,7 @@ function Contato() {
                 </Box>
               </Grid>
 
-              <Grid item xl={5} md={12} sx={{height: "100%",display: "flex", justifyContent: "center", alignItems: "center"}} >
+              <Grid item xl={5} md={6} sm={12} sx={{height: "100%",display: "flex", justifyContent: "center", alignItems: "center"}} >
                       
                       <BoxImage
                                       component="img"
@@ -117,7 +121,7 @@ function Contato() {
                                     />
                       
               </Grid>
-              <Grid item xs={2}></Grid>
+              <Grid item xs={2} md={12} sm={12}></Grid>
             </Grid>
           </Box>
       </BoxInicio>

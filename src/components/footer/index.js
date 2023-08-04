@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Box, Container, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, styled } from '@mui/material';
+import { Box, Container, Grid, Link, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography, styled } from '@mui/material';
 import InboxIcon from '@mui/icons-material/Inbox';
 import DraftsIcon from '@mui/icons-material/Drafts';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -41,8 +41,10 @@ export default function Footer(props) {
   return (
     <BoxFooter >
       <Container maxWidth="lg" sx={{display: 'flex', flexDirection: 'row', justifyContent: "center", alignItems: "center",padding: 6, width: "100%", height: "100%"}}>
-        <Box sx={{color: 'white',width: "100%"}} >
-              <nav aria-label="main mailbox folders">
+        <Grid container xs={12} sx={{display: 'flex', justifyContent: "center", alignItems: "center"}} spacing={2}> 
+          <Grid item lg={4} md={12} sm={12} sx={{display: 'flex', justifyContent: "center", alignItems: "center"}}>
+          <Box sx={{color: 'white',width: "100%",display: 'flex', justifyContent: "center", alignItems: "center",flexDirection: "column"}} >
+              <nav aria-label="main mailbox folders" sx={{display: 'flex', justifyContent: "center", alignItems: "center"}}>
               <List >
 
                 <ListItem disablePadding>
@@ -90,24 +92,24 @@ export default function Footer(props) {
              
             </Box>
         </Box>
+          </Grid>
 
-        <Box sx={{width: "100%", display: "flex", alignItems: "center"}}>
-
-        <Box
+          <Grid item lg={4} md={6} sm={6} sx={{display: 'flex', justifyContent: "center", alignItems: "center"}}>
+            <Box sx={{width: "100%", display: "flex", alignItems: "center"}}>
+              <Box
                 component="img"
-                  sx={{
-                    height: "auto",
-                    width: "100%",
+                sx={{
                   
-                  
-                    
-                  }}
+                  width: "100%",
+                }}
                 alt="The house from the offer."
                 src={LogoBootGeek}
               />
-        </Box>
+            </Box>
+          </Grid>
 
-        <Box sx={{width: "100%", display: "flex",alignItems:"center",justifyContent: "space-between", color: 'white',flexDirection: "column"}}>
+          <Grid item lg={4} md={12} sm={12} sx={{display: 'flex', justifyContent: "center", alignItems: "center"}}>
+          <Box sx={{width: "100%", display: "flex",alignItems:"center",justifyContent: "space-between", color: 'white',flexDirection: "column"}}>
                   <Box sx={{width: "100%", display: "flex",justifyContent:"center", color: 'white', padding: 2}}>
                   <Box  sx={{display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left', arginLeft: 1, height: 80, borderLeft: "1px solid white", padding: 2,paddingTop: 0}}>
                     <Typography sx={{fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>
@@ -148,6 +150,13 @@ export default function Footer(props) {
                       </ListItem>
                   </Box>   
         </Box>
+          </Grid>
+        </Grid>
+        
+
+        
+
+        
       </Container>
     </BoxFooter>
   );
