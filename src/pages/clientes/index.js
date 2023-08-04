@@ -21,7 +21,7 @@ const BoxInicio= styled(Box)(({ theme }) => ({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    background: "rgba(0,0,0,0.1)",
+   
     marginTop: 60,
     [theme.breakpoints.down('lg')]: {
       marginTop: 20,
@@ -125,6 +125,7 @@ function Clientes() {
   return (
     <div id="clientes" name="clientes">
       <BoxInicio >
+        <Box sx={{display:"flex", width:"100%", background:"rgba(0,0,0,0.1)", paddingTop: 20, paddingBottom: 20}}>
         <SwiperStyle
                 // install Swiper modules
                 modules={[Navigation, A11y]}
@@ -419,6 +420,7 @@ function Clientes() {
 
                 
         </SwiperMobileStyle>
+        </Box>
       </BoxInicio>
     </div>
   );
