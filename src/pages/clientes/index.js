@@ -20,9 +20,13 @@ const BoxInicio= styled(Box)(({ theme }) => ({
     display: "flex",
     flexDirection: "row",
     justifyContent: "center",
-    alignItems: "center"
-   
-  
+    alignItems: "center",
+    background: "rgba(0,0,0,0.1)",
+    marginTop: 60,
+    [theme.breakpoints.down('lg')]: {
+      marginTop: 20,
+      marginBottom: 40
+    }
   }));
 
   const SwiperStyle= styled(Swiper)(({ theme }) => ({
