@@ -112,27 +112,24 @@ export default function Footer(props) {
           <Box sx={{width: "100%", display: "flex",alignItems:"center",justifyContent: "space-between", color: 'white',flexDirection: "column"}}>
                   <Box sx={{width: "100%", display: "flex",justifyContent:"center", color: 'white', padding: 2}}>
                   <Box  sx={{display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left', arginLeft: 1, height: 80, borderLeft: "1px solid white", padding: 2,paddingTop: 0}}>
-                    <Typography sx={{fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>
-                    INÍCIO
+    
 
-                    </Typography>
-                    <Typography sx={{marginTop: 2 ,fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>
-                    SOBRE NÓS
 
-                    </Typography>
-                    <Typography sx={{marginTop: 2,fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>
-                    SOLUÇÕES
-                    </Typography>
+                    <Link href={`#inicio`} sx={{textDecoration: "none",display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left'}}><Typography textAlign="center" style={{textAlign: 'left',textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>INÍCIO</Typography></Link>
+
+                    <Link href={`#sobre`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase',textAlign: 'left', marginTop:"10px"}}>SOBRE NÓS</Typography></Link>
+
+                    <Link href={`#solucoes`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase',textAlign: 'left', marginTop:"10px"}}>SOLUÇÕES</Typography></Link>
+
                   </Box>
+
                   <Box  sx={{display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left', marginLeft: 1, height: 80, borderLeft: "1px solid white", padding: 2,paddingTop: 0}}>
-                    <Typography sx={{fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>
-                    CLIENTES
+                    
+                    <Link href={`#clientes`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>CLIENTES</Typography></Link>
 
-                    </Typography>
-                    <Typography sx={{marginTop: 2,fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>
-                    CONTATO
 
-                    </Typography>
+
+                    <Link href={`#contato`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{ margin:"10  px",textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>CONTATO</Typography></Link>
                    
                   </Box>
 
