@@ -108,7 +108,15 @@ const BoxContext = styled(Box)(({ theme }) => ({
  
 }));
 
-
+const getButtonStyle = (buttonIndex, currentImageIndex) => ({
+  mb: 1,
+  background: "none",
+  border: `1px solid ${alpha( "#0D120B", 0.4)}`,
+  backgroundColor: "none",
+  borderColor: "none",
+  color: buttonIndex === currentImageIndex ? "rgb(196, 240, 21)" : "white", // Altere a cor do botão ativo
+  fontWeight: 700,
+});
 
   
 
@@ -119,12 +127,15 @@ function Inicio() {
   const [fadeInOut, setFadeInOut] = useState(true);
 
   const buttons = [
-    <Button key="one" onClick={() => setCurrentImageIndex(0)} sx={{ mb: 1, background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none", borderColor: "none", color: "white", fontWeight: 700 }}>01</Button>,
-    <Button key="two" onClick={() => setCurrentImageIndex(1)} sx={{ mb: 1, background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none", borderColor: "none", color: "white", fontWeight: 700 }}>02</Button>,
-    <Button key="three" onClick={() => setCurrentImageIndex(2)} sx={{ mb: 1, background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none", borderColor: "none", color: "white", fontWeight: 700 }}>03</Button>,
-    <Button key="four" onClick={() => setCurrentImageIndex(3)} sx={{ mb: 1, background: "none", border: `1px solid ${alpha( "#0D120B", 0.4)}`, backgroundColor: "none", borderColor: "none", color: "white", fontWeight: 700 }}>04</Button>,
+    <Button key="one" onClick={() => setCurrentImageIndex(0)} sx={getButtonStyle(0, currentImageIndex)}>01</Button>,
+    <Button key="two" onClick={() => setCurrentImageIndex(1)} sx={getButtonStyle(1, currentImageIndex)}>02</Button>,
+    <Button key="three" onClick={() => setCurrentImageIndex(2)} sx={getButtonStyle(2, currentImageIndex)}>03</Button>,
+    <Button key="four" onClick={() => setCurrentImageIndex(3)} sx={getButtonStyle(3, currentImageIndex)}>04</Button>,
   ];
+
+ 
   
+
   useEffect(() => {
     const intervalTime = 5000; // Defina o tempo em milissegundos (5 segundos)
     const interval = setInterval(() => {
