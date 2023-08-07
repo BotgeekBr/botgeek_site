@@ -96,9 +96,9 @@ function Contato() {
                   <Box sx={{  background: "rgba(0,0,0,0.1)",display: "flex",flexDirection: "column",justifyContent: "center", alignItems: "center"}} gap={1} >
                   <Box sx={{ padding: 5,display: "flex",flexDirection: "column",justifyContent: "center", alignItems: "center"}}>
                                 
-                              <Typography variant='h5'>Entre em contato para mais informações!</Typography>
-                                                  <Typography variant='p'>Preencha todos os dados solicitados no formulário.</Typography>
-                                                  <Typography variant='p'>Aguarde que logo responderemos sua solicitação de contato.</Typography>
+                              <Typography variant='h5' sx={{fontFamily: "Work Sans, sans-se",marginBottom: 2}}>Entre em contato para mais informações!</Typography>
+                                                  <Typography variant='p' sx={{fontFamily: "Work Sans, sans-se",marginBottom: 1}}>Preencha todos os dados solicitados no formulário.</Typography>
+                                                  <Typography variant='p' sx={{fontFamily: "Work Sans, sans-se", marginBottom: 2}}>Aguarde que logo responderemos sua solicitação de contato.</Typography>
                                                   <TextField
                                                   fullWidth
                                                     id="outlined-controlled"

@@ -55,6 +55,7 @@ const BoxInicio= styled(Box)(({ theme }) => ({
     lineHeight: 1.5,
     wordSpacing: 1.5,
     fontSize: 15,
+    fontFamily: "Work Sans, sans-seri"
   }));
   
   
@@ -63,7 +64,8 @@ const BoxInicio= styled(Box)(({ theme }) => ({
     fontWeight: 500,
     letterSpacing: 1.5,
     lineHeight: 1.5,
-    fontSize: 15
+    fontSize: 15,
+    fontFamily: "Work Sans, sans-seri"
   }));
   const BoxMissionValueVision = styled(Box)(({ theme }) => ({
     display: "flex",
@@ -122,7 +124,7 @@ function Sobre() {
                   alt="The house from the offer."
                   src={Missao}
                 />
-                <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center"}}>Missão</Typography>
+                <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri"}}>Missão</Typography>
               </BoxMissionValueVision>
 
               
@@ -139,7 +141,7 @@ function Sobre() {
                 alt="The house from the offer."
                 src={Visao}
               />
-              <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center"}}>Visão</Typography>
+              <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri"}}>Visão</Typography>
               </BoxMissionValueVision>
 
               <BoxMissionValueVision >
@@ -155,7 +157,7 @@ function Sobre() {
                   alt="The house from the offer."
                   src={Valores}
                 />
-                <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center"}}>Valor</Typography>
+                <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri"}}>Valor</Typography>
               </BoxMissionValueVision>
       </BoxDivs>
      

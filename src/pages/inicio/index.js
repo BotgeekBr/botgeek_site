@@ -137,7 +137,7 @@ function Inicio() {
   
 
   useEffect(() => {
-    const intervalTime = 5000; // Defina o tempo em milissegundos (5 segundos)
+    const intervalTime = 9000; // Defina o tempo em milissegundos (5 segundos)
     const interval = setInterval(() => {
       setFadeInOut(false); // Inicia a transição para ocultar a imagem
       setTimeout(() => {
@@ -240,15 +240,17 @@ function Inicio() {
           
             </Grid>
         </SectionOne>
-        <SectionTwo sx={{
-      
-      
-    }}> 
-          <ButtonGroupList
-            
-            variant="outlined"
-            
-          >
+        <SectionTwo >
+          {/* <Box
+            component="img"
+            sx={{
+                height: "100%",
+                width: "100%",
+                maxWidth: { xs: 300, md: 300,sm:300 },
+                }}
+            alt="The house from the offer."
+            src={HeaderText}/> */}
+          <ButtonGroupList variant="outlined">
             {buttons}
           </ButtonGroupList>  
         </SectionTwo>

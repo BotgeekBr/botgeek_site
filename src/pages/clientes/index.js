@@ -148,8 +148,8 @@ function Clientes() {
                     alt="Paella dish"
                   />
                   <CardContent>
-                    <Typography variant="body1" sx={{color:"black",fontWeight: 600,marginBottom: 3,fontSize:18}}>Loja do zeze</Typography>
-                    <Typography variant="body2" color="text.secondary">
+                    <Typography variant="body1" sx={{color:"black",fontWeight: 600,marginBottom: 3,fontSize:18,fontFamily: "Work Sans, sans-serif"}}>Loja do zeze</Typography>
+                    <Typography variant="body2" color="text.secondary" sx={{fontFamily: "Work Sans, sans-serif"}}>
                       This impressive paella is a perfect party dish and a fun meal to cook
                       together with your guests. Add 1 cup of frozen peas along with the mussels,
                       if you like.

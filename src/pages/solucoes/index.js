@@ -283,9 +283,9 @@ function Solucoes() {
 
                   }}>
                   <Typography 
-                  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500
+                  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,
+                   fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"
                      }}
                   >Amplie seu alcance com maior presença digital e
                       saia na frente dos seus concorrentes.
@@ -306,25 +306,25 @@ function Solucoes() {
                       width: "100%",
                       
                     }}>
-                  <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 700, fontSize: 17}} > 
+                  <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 700, fontSize: 17,fontFamily: "Work Sans, sans-seri"}} > 
                   Conheça nossas Soluções:<br></br>
   Desenvolvimento de Apps e Software</Typography>
 
                   <Typography sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
                       lineHeight:  1.4,
-                      wordSpacing:  1.2, fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>Mobile:</span> Desenvolvemos soluções para mobile, apps
+                       fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 600}}>Mobile:</span> Desenvolvemos soluções para mobile, apps
   intuitivos, pensado em designer e fáceis de usar,
   além disso com ótima experiência de UI/UX</Typography>
                   <Typography  sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
                       lineHeight:  1.4,
-                      wordSpacing:  1.2, fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>Web:</span> Criação de diversos softwares para web ou
+                       fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 600}}>Web:</span> Criação de diversos softwares para web ou
   desktop, como CRM’s, ERP’s, voltado para mercado
   financeiro, ou marktplace, um MVP, ou qualquer
   outra necessidade de software. Podendo ser
   também específico para back-end ou front-end.</Typography>
                   <Typography  sx={{ marginBottom: 2,letterSpacing: 1.2,
                       lineHeight:  1.4,
-                      wordSpacing:  1.2, color: "black", fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>Web3 e blockchain:</span> Oferecemos também
+                       color: "black", fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 600}}>Web3 e blockchain:</span> Oferecemos também
   consultoria e desenvolvimetno de aplicações
   voltadas para WEB3, com foco em blockchain e/ou
   criptomoedas, assim como criação de tokens, nfts,
@@ -365,9 +365,9 @@ function Solucoes() {
                     
 
                   }}>
-                    <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                    <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,
+                   fontSize: 16, fontWeight: 400, marginBottom: 4,fontFamily: "Work Sans, sans-seri"
                      }}>Modernize a rotina da sua equipe com Automação
                     RPA, aumentando a eficiência e a qualidade de
                     tarefas que são realizadas manualmente e
@@ -376,10 +376,10 @@ function Solucoes() {
                     primeiro passo para robotização da sua empresa.
                     </Typography>
 
-                  <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500
-                     }}><span style={{fontWeight: 700}}> RPA: <br></br></span> partir da consultoria de automação RPA, nossos
+                  <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,
+                   fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-se"
+                     }}><span style={{fontWeight: 700,fontFamily: "Work Sans, sans-seri"}}> RPA: <br></br></span> partir da consultoria de automação RPA, nossos
                   especialistas em robotização desenham a melhor
                   solução de automação com foco nos objetivos de
                   negócio encontrando melhorias nos processos e
@@ -401,27 +401,27 @@ function Solucoes() {
                       
                     }}>
                    
-                <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 700, fontSize: 17}}>Beneficios:</Typography>
+                <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 700, fontSize: 17,fontFamily: "Work Sans, sans-seri"}}>Beneficios:</Typography>
 
-                <Typography sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
-                    lineHeight:  1.4,
-                    wordSpacing:  1.2, fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>MELHOR EXPERIÊNCIA DO CLIENTE</span><br></br>
+                <Typography sx={{ marginBottom: 2, color: "black",
+                    lineHeight:  1.2,
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>MELHOR EXPERIÊNCIA DO CLIENTE</span><br></br>
 Ganhe maior velocidade das operações, qualidade e
 disponibilidade
 </Typography>
-                <Typography sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
-                    lineHeight:  1.4,
-                    wordSpacing:  1.2, fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>UMENTO DA AGILIDADE</span><br></br>
+                <Typography sx={{ marginBottom: 2, color: "black",
+                    lineHeight:  1.2,
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>UMENTO DA AGILIDADE</span><br></br>
 Produtividade de forma ininterrupta para 24×7</Typography>
-                <Typography sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
-                    lineHeight:  1.4,
-                    wordSpacing:  1.2, fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>GANHOS DE EFICIÊNCIA OPERACIONAL</span><br></br>
+                <Typography sx={{ marginBottom: 2, color: "black",
+                    lineHeight:  1.2,
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>GANHOS DE EFICIÊNCIA OPERACIONAL</span><br></br>
 Reduza custos com mão de obra entre 40% e 70%
 em média
 </Typography>
-<Typography sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
-                    lineHeight:  1.4,
-                    wordSpacing:  1.2, fontSize: 16, fontWeight: 500}}><span style={{fontWeight: 600}}>GARANTIA DE CONFORMIDADE</span><br></br>
+<Typography sx={{ marginBottom: 2, color: "black",
+                    lineHeight:  1.2,
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>GARANTIA DE CONFORMIDADE</span><br></br>
 Aumente a qualidade com redução de 100% dos
 erros</Typography>
                 </Box>
@@ -462,15 +462,15 @@ erros</Typography>
                     
 
                   }}>
-               <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+               <Typography sx={{ color: "black",letterSpacing: 1.1,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Integrações entre softwares de uma forma fácil.
                     Podemos integrar quaisquer softwares com
                     qualquer tecnologia</Typography>
-                    <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                    <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}><span style={{fontWeight: 700}}>Exemplos de integrações</span><br></br>
                     Envio de relatórios de um sitema ERP para BI<br></br>
                     Envio de relatórios de CRM para Google Sheeets<br></br>
@@ -479,11 +479,11 @@ erros</Typography>
                     bancário<br></br>
                     Integrar métodos de pagamentos<br></br>
                     Integrar um chatbot com um outro sistema<br></br></Typography>
-                    <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, marginBottom: 4,
+                    <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,
+                   fontSize: 16, marginBottom: 4,
 
-
+                   fontFamily: "Work Sans, sans-se",
                   background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4, color: "black", fontWeight: 700
 
 
@@ -502,9 +502,9 @@ erros</Typography>
                       
                     }}>
                    
-                   <Typography  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                   <Typography  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}><span style={{fontWeight: 700}}>1. Escolha o software de origem e destino</span><br></br>
 A Botgeek pode integrar qualquer software com
 outro software, diferentes tipos de softwares, com
@@ -514,9 +514,9 @@ webhook, Google Sheets<br></br>
 - Pode ser CRM, ERP, BI, chatbot, ou outro software<br></br>
 - Automatize seus processos e saia do manual</Typography>
 
-                <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}><span style={{fontWeight: 700}}>2. Defina o objetivo</span><br></br>
 Defina qual o objetivo de sua integração, que pode
 ser desde facilitar um pequeno processo que é feito
@@ -526,9 +526,9 @@ A. Defina o que deseja integrar
 B. Quais dados deseja enviar para o outro sistema
 C. Ou, qual tarefa deve ser automatizada
 </Typography>
-                <Typography sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}><span style={{fontWeight: 700}}>3. Deixe conosco</span><br></br>
 - Deixe conosco. Você chegou ao lugar certo, entre
 em contato e em poucos minutos te passaremos
@@ -571,9 +571,9 @@ um orçamento sobre sua integração, rápido e fácil</Typography>
                     
 
                   }}>
-              <Typography  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+              <Typography  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Somos uma equipe de profissionais apaixonados
 por design, especializados em criar experiências
 excepcionais para os usuários. Oferecemos serviços
@@ -581,17 +581,17 @@ abrangentes de design, abrangendo as áreas de
 design de interface do usuário (UI) e design de
 experiência do usuário (UX).
 </Typography>
-                    <Typography  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                    <Typography  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>O design é uma parte fundamental de qualquer
 projeto, pois influencia diretamente a forma como
 as pessoas interagem e se envolvem com um
 produto ou serviço.</Typography >
 
-                    <Typography  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                    <Typography  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Quando se trata de UX, colocamos o usuário no
 centro de tudo o que fazemos. Realizamos
 pesquisas aprofundadas para compreender o seu
@@ -609,8 +609,8 @@ público-alvo, suas expectativas e desejos.</Typography>
                    
                    <Typography
                    sx={{ color: "black",letterSpacing: 1.2,
-                   lineHeight:  1.4,
-                   wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                   lineHeight:  1.4,fontFamily: "Work Sans, sans-se",
+                    fontSize: 16, fontWeight: 400, marginBottom: 4
                       }}
                 >Por outro lado, o design de interface do usuário (UI)
                   é responsável por criar a estética visual de um
@@ -620,17 +620,17 @@ público-alvo, suas expectativas e desejos.</Typography>
                   identidade única.
                 </Typography>
 
-                <Typography  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                <Typography  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Nosso objetivo é criar designs que não apenas
                 sejam visualmente agradáveis, mas também
                 eficazes na transmissão da sua mensagem e no
                 engajamento dos usuários.
                 </Typography>
-                <Typography  sx={{ color: "black",letterSpacing: 1.2,
-                  lineHeight:  1.4,
-                  wordSpacing:  1.2, fontSize: 16, fontWeight: 500, marginBottom: 4
+                <Typography  sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                   fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Entre em contato conosco hoje mesmo para
                   discutir suas ideias e descobrir como podemos
                   ajudar a transformá-las em realidade. Estamos
