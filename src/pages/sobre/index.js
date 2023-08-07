@@ -112,14 +112,14 @@ function Sobre() {
 
   const BoxVision = () =>{
 
-    return <Typography> Ser reconhecida como a principal softhouse formacional, referência na capacitação de profissionais de
+    return <Typography sx={{marginTop: 4}}> Ser reconhecida como a principal softhouse formacional, referência na capacitação de profissionais de
     tecnologia, que combinam excelência técnica com valores éticos e morais fundamentados na palavra de
     Deus</Typography>
   } 
 
   const BoxMission = () =>{
 
-    return <Typography>Capacitar e formar pessoas por meio de projetos inovadores, baseados em princípios bíblicos, para que se
+    return <Typography sx={{marginTop: 4}}>Capacitar e formar pessoas por meio de projetos inovadores, baseados em princípios bíblicos, para que se
     tornem profissionais altamente qualificados e comprometidos em transformar o mercado de tecnologia e
     contribuir para a construção de uma sociedade melhor</Typography>
   }
