@@ -159,7 +159,7 @@ function Header() {
             >
               {pages.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Link href={`#${page.id}`}><Typography textAlign="center" style={{textDecoration: "none"}}>{page.name}</Typography></Link>
+                  <Link href={`#${page.id}`} sx={{textDecoration:"none"}}><Typography textAlign="center" style={{textDecoration: "none", color: 'black'}}>{page.name}</Typography></Link>
                 </MenuItem>
               ))}
             </Menu>

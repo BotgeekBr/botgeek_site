@@ -67,22 +67,25 @@ const BoxInicio= styled(Box)(({ theme }) => ({
     fontSize: 15,
     fontFamily: "Work Sans, sans-seri"
   }));
-  const BoxMissionValueVision = styled(Button)(({ theme }) => ({
+  const BoxMissionValueVision = styled(Button)(({ theme,selected  }) => ({
     display: "flex",
-    flexDirection: "column", 
+    flexDirection: "column",
     alignItems: "center",
-    justifyContent:"center",
+    justifyContent: "center",
     textAlign: "center",
-
-    [theme.breakpoints.down('sm')]: {
-      marginTop: 20
+    opacity: selected ? 1 : 0.3, // Define a opacidade do botão com base na propriedade 'selected'
+     // Define a borda quando o botão não está selecionado
+    cursor: "pointer", // Define o cursor como ponteiro para indicar que o botão é clicável
+    [theme.breakpoints.down("sm")]: {
+      marginTop: 20,
     },
   })); 
 function Sobre() {
 
-  const [selectedContent, setSelectedContent] = useState(null);
+  const [selectedContent, setSelectedContent] = useState("Missão");
 
-  // Função para mostrar o conteúdo correto na segunda box
+  // Restante do código...
+
   const handleButtonClick = (content) => {
     setSelectedContent(content);
   };
@@ -91,7 +94,7 @@ function Sobre() {
 
       return <Box>
         <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Compromisso com a Excelência:</span> Buscamos constantemente aprimorar nossos métodos e oferecer o
-          melhor em capacitação técnica e valores morais, visando sempre à excelência</Typography>
+        melhor em capacitação técnica e valores morais, visando sempre à excelência</Typography>
         <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Ética e Integridade:</span> Baseamos nossas ações em princípios bíblicos, promovendo uma cultura de ética e
           integridade em todas as nossas relações com colaboradores, clientes e parceiros</Typography>
         <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Inovação e Criatividade:</span> Estimulamos a busca por soluções inovadoras e criativas, tanto em nossos
@@ -159,13 +162,14 @@ function Sobre() {
       
         <Grid item lg={7} md={12} sm={12} xs={12} sx={{display: "flex", flexDirection: "column", justifyContent: "flex-start", alignItems: "flex-start", width: "100%", marginTop: 10}}>
              <Box sx={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", marginTop: 10}}>
-                <BoxMissionValueVision  onClick={() => handleButtonClick(BoxMission())}>
+                <BoxMissionValueVision   onClick={() => handleButtonClick("Missão")}
+            selected={selectedContent === "Missão"}>
                   <Box
                     component="img"
                       sx={{
                         height: "100%",
                         width: "100%",
-                      
+                        width: {xl: "200px", lg:"200px" ,sm:"85px" ,xs:"85px"},
                         maxWidth: { xs: 200, md: 250,sm:250 },
                         
                       }}
@@ -176,13 +180,14 @@ function Sobre() {
                 </BoxMissionValueVision>
 
                 
-                <BoxMissionValueVision sx={{ marginLeft: 10, marginRight: 10 }}  onClick={() => handleButtonClick(BoxVision())}>
+                <BoxMissionValueVision sx={{ marginLeft: 10, marginRight: 10 }}   onClick={() => handleButtonClick("Visão")}
+            selected={selectedContent === "Visão"}>
                   <Box
                   component="img"
                     sx={{
                       height: "100%",
                       width: "100%",
-                    
+                      width: {xl: "200px", lg:"200px" ,sm:"85px" ,xs:"85px"},
                       maxWidth: { xs: 200, md: 250,sm:250 },
                       
                     }}
@@ -192,13 +197,14 @@ function Sobre() {
                 <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri",color:"black"}}>Visão</Typography>
                 </BoxMissionValueVision>
 
-                <BoxMissionValueVision  onClick={() => handleButtonClick(BoxValue())}>
+                <BoxMissionValueVision  onClick={() => handleButtonClick("Valor")}
+            selected={selectedContent === "Valor"}>
                   <Box
                     component="img"
                       sx={{
                         height: "100%",
                         width: "100%",
-                      
+                        width: {xl: "200px", lg:"200px" ,sm:"85px" ,xs:"85px"},
                         maxWidth: { xs: 200, md: 250,sm:250 },
                         
                       }}
@@ -211,7 +217,9 @@ function Sobre() {
              
              <Box>
               <Box>
-                {selectedContent}
+                {selectedContent === "Missão" && <BoxMission />}
+                {selectedContent === "Visão" && <BoxVision />}
+                {selectedContent === "Valor" && <BoxValue />}
               </Box>
              </Box>
         </Grid>
