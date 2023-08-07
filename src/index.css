@@ -12,3 +12,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'GINZACDE';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./fonts/ginza/GINZACDE.TTF');
+}
+@font-face {
+  font-family: 'GINZADEM';
+  font-style: normal;
+  font-weight: bold;
+  src: url('./fonts/ginza/GINZADEM.TTF');
+}
+
+@font-face {
+  font-family: 'Logik';
+
+  src: url('./fonts/logik/Logik-ExtendedBlackOblique.eot');
+}
+
+@font-face {
+  font-family: 'Logiktwo';
+
+  src: url('./fonts/logik/Logik-Extended.ttf');
+}
+
+
+
+

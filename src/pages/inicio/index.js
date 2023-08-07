@@ -276,7 +276,8 @@ const TextConteudo = {
   letterSpacing: 1.5,
   lineHeight: 1.5,
   wordSpacing: 1.5,
-  fontSize: 15
+  fontSize: 15,
+  fontFamily: "Work Sans, sans-seri"
 }
 
 const TextLastConteudo = {
@@ -285,5 +286,6 @@ const TextLastConteudo = {
   letterSpacing: 1.5,
   lineHeight: 1.5,
  
-  fontSize: 20
+  fontSize: 20,
+  fontFamily: "Work Sans, sans-seri"
 }

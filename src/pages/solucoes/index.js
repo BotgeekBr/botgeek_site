@@ -128,11 +128,52 @@ function Solucoes() {
               }}
               
             >
-              <Tab label="Desenvolvimento de Apps e software" sx={{color: "Black",background: "rgba(0,0,0,0.1)", width: "100%", maxWidth: {sm: 300}, margin: 1, fontWeight: 700, fontSize: 16}}/>
-              <Tab label="Automação RPA" sx={{color: "Black",background: "rgba(0,0,0,0.1)", width: "100%",                     maxWidth: {sm: 300},  margin: 1, fontWeight: 700, fontSize: 16}} />
-              <Tab label="Integrações de software"  sx={{color: "Black",background: "rgba(0,0,0,0.1)", width: "100%",          maxWidth: {sm: 300},  margin: 1, fontWeight: 700, fontSize: 16}}/>
-              <Tab label="Design ux e Ui" sx={{color: "Black",background: "rgba(0,0,0,0.1)", width: "100%",                    maxWidth: {sm: 300}, margin: 1, fontWeight: 700, fontSize: 16}}/>
-        
+              
+
+              <Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Desenvolvimento<br />de Apps e <br />software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
+
+
+<Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Automação<br />RPA </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
+
+
+<Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Integrações<br />de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
+
+
+<Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Design<br />ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
+
+
             </Tabs>
           </BoxDesktop>
 
@@ -154,11 +195,55 @@ function Solucoes() {
           
             }}}
           >
-            <Tab label="Desenvolvimento de Apps e software" sx={{padding: 3,color: "Black",background: "rgba(0,0,0,0.1)",  fontWeight: 700, fontSize: 16}}/>
-            <Tab label="Automação RPA" sx={{padding: 3,color: "Black",background: "rgba(0,0,0,0.1)",                    marginLeft: 1, fontWeight: 700, fontSize: 16}} />
-            <Tab label="Integrações de software"  sx={{padding: 3,color: "Black",background: "rgba(0,0,0,0.1)",            marginLeft: 1, fontWeight: 700, fontSize: 16}}/>
-            <Tab label="Design ux e Ui" sx={{padding: 3,color: "Black",background: "rgba(0,0,0,0.1)",                    marginLeft: 1, fontWeight: 700, fontSize: 16}}/>
-      
+            <Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Desenvolvimento<br />de Apps e <br />software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
+
+
+<Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Automação<br />RPA </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
+
+
+<Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Integrações<br />de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
+
+
+<Tab    label={<Typography
+                          sx={{
+                            fontFamily: "Logik",
+                            color: "black",
+                            lineHeight: 1,
+                            letterSpacing: 0.2,
+                            fontWeight: 700, fontSize: 20
+                          }}
+                        > Design<br />ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
+
+
+
+
+
+
+            
           </Tabs>
           </BoxOthersConfigs>
 

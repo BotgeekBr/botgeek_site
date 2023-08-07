@@ -20,11 +20,11 @@ const pages = [
 
   {
     id: 'inicio',
-    name: 'Inicio'
+    name: 'INÍCIO'
   },
   {
     id: 'sobre',
-    name: 'Sobrre Nós'
+    name: 'Sobre Nós'
   },
   {
     id: 'solucoes',
@@ -44,22 +44,21 @@ const pages = [
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const [activeSection, setActiveSection] = React.useState('inicio'); // Set the initial active section
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
+  const handleSectionClick = (sectionId) => {
+    setActiveSection(sectionId);
+    handleCloseNavMenu();
   };
+
 
   return (
     <AppBar position="fixed" sx={{background: "rgba(0,0,0,0.7)",zIndex: 9999,borderBottom: "1px solid #C4F015"}}>
@@ -100,17 +99,33 @@ function Header() {
            
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
-              <Button
-                key={page.id}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-
+        {pages.map((page) => (
+          <Button
+            key={page.id}
+            onClick={() => handleSectionClick(page.id)}
+            sx={{
+              my: 2,
+              color: 'white',
+              display: 'block',
+              opacity: activeSection === page.id ? 1 : 0.6,
+            }}
+          >
+            <Link href={`#${page.id}`} style={{ textDecoration: 'none' }}>
+              <Typography
+                textAlign="center"
+                style={{
+                  fontFamily: 'Work Sans, sans-serif',
+                  fontWeight: 400,
+                  color: activeSection === page.id ? '#C4F015' : 'white', // Define a cor aqui
+                }}
               >
-            <Link href={`#${page.id}`} style={{textDecoration: "none",color: "white"}}><Typography textAlign="center" style={{textDecoration: "none"}}>{page.name}</Typography></Link>
-              </Button>
-            ))}
-          </Box>
+                {page.name}
+              </Typography>
+            </Link>
+          </Button>
+        ))}
+      </Box>
+
 
 
           <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>

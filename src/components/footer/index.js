@@ -52,7 +52,7 @@ export default function Footer(props) {
                     <ListItemIcon>
                       <EmailIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
-                    <ListItemText  primary="contato@botgeek.com.br" />
+                    <ListItemText  primary="contato@botgeek.com.br" sx={{fontFamily: "Work Sans, sans-seri"}}/>
                   </ListItemButton>
                 </ListItem>
 
@@ -61,7 +61,7 @@ export default function Footer(props) {
                     <ListItemIcon>
                       <WhatsAppIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
-                    <ListItemText primary="(41) 9991 722 778" />
+                    <ListItemText primary="(41) 9991 722 778" sx={{fontFamily: "Work Sans, sans-seri"}} />
                   </ListItemButton>
                 </ListItem>
 
@@ -70,7 +70,7 @@ export default function Footer(props) {
                     <ListItemIcon>
                       <InstagramIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
-                    <ListItemText primary="@botGeek_" />
+                    <ListItemText primary="@botGeek_" sx={{fontFamily: "Work Sans, sans-seri"}}/>
                   </ListItemButton>
                 </ListItem>
               </List>
@@ -85,7 +85,7 @@ export default function Footer(props) {
                     <ListItemIcon>
                       <CopyrightIcon  sx={{color: 'rgba(255,255,255,0.7)',fontSize: 15}} />
                     </ListItemIcon>
-                    <ListItemText primaryTypographyProps={{fontSize: '10px', marginLeft: "-20px",color: "rgba(255,255,255,0.7)"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
+                    <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px",color: "rgba(255,255,255,0.7)"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
                   </ListItemButton>
                 </ListItem>
               
@@ -115,21 +115,21 @@ export default function Footer(props) {
     
 
 
-                    <Link href={`#inicio`} sx={{textDecoration: "none",display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left'}}><Typography textAlign="center" style={{textAlign: 'left',textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>INÍCIO</Typography></Link>
+                    <Link href={`#inicio`} sx={{textDecoration: "none",display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left'}}><Typography textAlign="center" style={{textAlign: 'left',textDecoration: "none", color:"white",fontSize: 13,fontFamily: "Work Sans, sans-seri", fontWeight: 500, textTransform: 'uppercase'}}>INÍCIO</Typography></Link>
 
-                    <Link href={`#sobre`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase',textAlign: 'left', marginTop:"10px"}}>SOBRE NÓS</Typography></Link>
+                    <Link href={`#sobre`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13,fontFamily: "Work Sans, sans-seri", fontWeight: 500, textTransform: 'uppercase',textAlign: 'left', marginTop:"10px"}}>SOBRE NÓS</Typography></Link>
 
-                    <Link href={`#solucoes`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase',textAlign: 'left', marginTop:"10px"}}>SOLUÇÕES</Typography></Link>
+                    <Link href={`#solucoes`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13,fontFamily: "Work Sans, sans-seri", fontWeight: 500, textTransform: 'uppercase',textAlign: 'left', marginTop:"10px"}}>SOLUÇÕES</Typography></Link>
 
                   </Box>
 
                   <Box  sx={{display: "flex", alignItems: "left", flexDirection: 'column', textAlign: 'left', marginLeft: 1, height: 80, borderLeft: "1px solid white", padding: 2,paddingTop: 0}}>
                     
-                    <Link href={`#clientes`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>CLIENTES</Typography></Link>
+                    <Link href={`#clientes`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{textDecoration: "none", color:"white",fontSize: 13,fontFamily: "Work Sans, sans-seri", fontWeight: 500, textTransform: 'uppercase'}}>CLIENTES</Typography></Link>
 
 
 
-                    <Link href={`#contato`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{ margin:"10  px",textDecoration: "none", color:"white",fontSize: 13, fontWeight: 500, textTransform: 'uppercase'}}>CONTATO</Typography></Link>
+                    <Link href={`#contato`} sx={{textDecoration: "none"}}><Typography textAlign="center" style={{ margin:"10  px",textDecoration: "none", color:"white",fontSize: 13,fontFamily: "Work Sans, sans-seri", fontWeight: 500, textTransform: 'uppercase'}}>CONTATO</Typography></Link>
                    
                   </Box>
 
@@ -139,9 +139,9 @@ export default function Footer(props) {
                   <Box sx={{ display: "flex",justifyContent:"center", alignItems:'center', color: 'white'}}>
                     <ListItem disablePadding sx={{marginTop: 8}}>
                         <ListItemButton>
-                        <ListItemText primaryTypographyProps={{fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5)'}}    primary="Desenvolvido por: " ></ListItemText>
+                        <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5),'}}    primary="Desenvolvido por: " ></ListItemText>
 
-                          <ListItemText primaryTypographyProps={{marginLeft:1,fontSize: '10px', color: 'rgba(255,255,255,1)'}}    primary=" Lança Design e Botgeek" ></ListItemText>
+                          <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",marginLeft:1,fontSize: '10px', color: 'rgba(255,255,255,1)'}}    primary=" Lança Design e Botgeek" ></ListItemText>
                         </ListItemButton>
                       </ListItem>
                   </Box>   
