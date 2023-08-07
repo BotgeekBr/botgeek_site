@@ -214,6 +214,7 @@ function Inicio() {
                 <Typography style={TextConteudo}>
                 Formado por engenheiros de software a Botgeek
                 veio para facilitar o desenvolvimento de software.
+                <br></br><br></br>
                 Entendemos a base de um bom software é o
                 relacionamento com nossos clientes.
                 </Typography>

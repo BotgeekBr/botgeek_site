@@ -93,19 +93,19 @@ function Sobre() {
   const BoxValue = () =>{
 
       return <Box>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Compromisso com a Excelência:</span> Buscamos constantemente aprimorar nossos métodos e oferecer o
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Compromisso com a Excelência:</span> Buscamos constantemente aprimorar nossos métodos e oferecer o
         melhor em capacitação técnica e valores morais, visando sempre à excelência</Typography>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Ética e Integridade:</span> Baseamos nossas ações em princípios bíblicos, promovendo uma cultura de ética e
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Ética e Integridade:</span> Baseamos nossas ações em princípios bíblicos, promovendo uma cultura de ética e
           integridade em todas as nossas relações com colaboradores, clientes e parceiros</Typography>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Inovação e Criatividade:</span> Estimulamos a busca por soluções inovadoras e criativas, tanto em nossos
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Inovação e Criatividade:</span> Estimulamos a busca por soluções inovadoras e criativas, tanto em nossos
           projetos tecnológicos quanto na maneira como abordamos desafios do mercado</Typography>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Formação e Oportunidade:</span> Valorizamos a formação contínua dos nossos colaboradores e proporcionamos
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Formação e Oportunidade:</span> Valorizamos a formação contínua dos nossos colaboradores e proporcionamos
           oportunidades reais de atuação em projetos significativos desde o início de suas jornadas profissionais.</Typography>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Responsabilidade Social:</span> Comprometemo-nos a contribuir para uma sociedade melhor, participando
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Responsabilidade Social:</span> Comprometemo-nos a contribuir para uma sociedade melhor, participando
           ativamente em iniciativas sociais e promovendo o desenvolvimento sustentável</Typography>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Trabalho em Equipe</span>: Acreditamos que o trabalho colaborativo e respeitoso é fundamental para alcançar
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Trabalho em Equipe</span>: Acreditamos que o trabalho colaborativo e respeitoso é fundamental para alcançar
           resultados excepcionais, valorizando a diversidade de ideias e perspectiva</Typography>
-        <Typography sx={{marginTop: 1}}><span style={{fontWeight: 700}}>Paixão pelo Aprendizado:</span> Estimulamos a paixão pelo aprendizado contínuo, incentivando a curiosidade e o
+        <Typography sx={{marginTop: 4}}><span style={{fontWeight: 700}}>Paixão pelo Aprendizado:</span> Estimulamos a paixão pelo aprendizado contínuo, incentivando a curiosidade e o
           crescimento pessoal e profissional de nossos colaboradores.</Typography>
       </Box>
   }
@@ -142,7 +142,7 @@ function Sobre() {
                 Botgeek no final da formação, contrata os
                 melhores alunos para que eles possam já
                 sair do curso atuando em projetos reais e
-                inovadores no mercado real.
+                inovadores no mercado real. <br></br><br></br>
                 A Botgeek também é uma empresa que
                 acredita em princípios bíblicos, temos nossa
                 visão , missão e valores pautados na palavra
@@ -211,7 +211,7 @@ function Sobre() {
                     alt="The house from the offer."
                     src={Valores}
                   />
-                  <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri",color:"black"}}>Valor</Typography>
+                  <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri",color:"black"}}>Valores</Typography>
                 </BoxMissionValueVision>
              </Box>
              

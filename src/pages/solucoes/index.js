@@ -136,7 +136,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Desenvolvimento<br />de Apps e <br />software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
 
@@ -147,7 +147,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Automação<br />RPA </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
 
@@ -158,7 +158,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Integrações<br />de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
 
@@ -169,7 +169,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Design<br />ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
 
@@ -201,7 +201,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Desenvolvimento<br />de Apps e <br />software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
 
@@ -212,7 +212,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Automação<br />RPA </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
 
@@ -223,7 +223,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Integrações<br />de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
 
@@ -234,7 +234,7 @@ function Solucoes() {
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 700, fontSize: 20
+                            fontWeight: 600, fontSize: 20
                           }}
                         > Design<br />ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
 
@@ -256,7 +256,7 @@ function Solucoes() {
           <CustomTabPanel value={value} index={0} dir={theme.direction}>
             <Grid container xs={12} sx={{height:"100%"}} gap={4}>  
               <Grid item xl={4} sm={12} sx={{height:"100%"}} >
-              <Box  sx={{height: {xl: 700,xl:600, sm: 400} }}>
+              <Box  sx={{height: {xl: 600,xl:600, sm: 400} }}>
                 <Box
                   component="img"
                   sx={{
@@ -285,7 +285,7 @@ function Solucoes() {
                   <Typography 
                   sx={{ color: "black",letterSpacing: 1.1,
                   lineHeight:  1.2,
-                   fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"
+                   fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"
                      }}
                   >Amplie seu alcance com maior presença digital e
                       saia na frente dos seus concorrentes.
@@ -306,25 +306,25 @@ function Solucoes() {
                       width: "100%",
                       
                     }}>
-                  <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 700, fontSize: 17,fontFamily: "Work Sans, sans-seri"}} > 
+                  <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 600, fontSize: 17,fontFamily: "Work Sans, sans-serif"}} > 
                   Conheça nossas Soluções:<br></br>
   Desenvolvimento de Apps e Software</Typography>
 
                   <Typography sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
                       lineHeight:  1.4,
-                       fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 600}}>Mobile:</span> Desenvolvemos soluções para mobile, apps
+                       fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>Mobile:</span> Desenvolvemos soluções para mobile, apps
   intuitivos, pensado em designer e fáceis de usar,
   além disso com ótima experiência de UI/UX</Typography>
                   <Typography  sx={{ marginBottom: 2, color: "black",letterSpacing: 1.2,
                       lineHeight:  1.4,
-                       fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 600}}>Web:</span> Criação de diversos softwares para web ou
+                       fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>Web:</span> Criação de diversos softwares para web ou
   desktop, como CRM’s, ERP’s, voltado para mercado
   financeiro, ou marktplace, um MVP, ou qualquer
   outra necessidade de software. Podendo ser
   também específico para back-end ou front-end.</Typography>
                   <Typography  sx={{ marginBottom: 2,letterSpacing: 1.2,
                       lineHeight:  1.4,
-                       color: "black", fontSize: 16, fontWeight: 500,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 600}}>Web3 e blockchain:</span> Oferecemos também
+                       color: "black", fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>Web3 e blockchain:</span> Oferecemos também
   consultoria e desenvolvimetno de aplicações
   voltadas para WEB3, com foco em blockchain e/ou
   criptomoedas, assim como criação de tokens, nfts,
@@ -339,7 +339,7 @@ function Solucoes() {
           <CustomTabPanel value={value} index={1} dir={theme.direction}>
             <Grid container xs={12} sx={{height:"100%"}} gap={4}>  
               <Grid item xl={4} sm={12} sx={{height:"100%"}} >
-              <Box  sx={{height: {xl: 700,xl:600, sm: 400} }}>
+              <Box  sx={{height: {xl: 600,xl:600, sm: 400} }}>
                 <Box
                   component="img"
                   sx={{
@@ -367,7 +367,7 @@ function Solucoes() {
                   }}>
                     <Typography sx={{ color: "black",letterSpacing: 1.1,
                   lineHeight:  1.2,
-                   fontSize: 16, fontWeight: 400, marginBottom: 4,fontFamily: "Work Sans, sans-seri"
+                   fontSize: 16, fontWeight: 400, marginBottom: 4,fontFamily: "Work Sans, sans-serif"
                      }}>Modernize a rotina da sua equipe com Automação
                     RPA, aumentando a eficiência e a qualidade de
                     tarefas que são realizadas manualmente e
@@ -378,8 +378,8 @@ function Solucoes() {
 
                   <Typography sx={{ color: "black",letterSpacing: 1.1,
                   lineHeight:  1.2,
-                   fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-se"
-                     }}><span style={{fontWeight: 700,fontFamily: "Work Sans, sans-seri"}}> RPA: <br></br></span> partir da consultoria de automação RPA, nossos
+                   fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"
+                     }}><span style={{fontWeight: 600,fontFamily: "Work Sans, sans-serif"}}> RPA: <br></br></span> partir da consultoria de automação RPA, nossos
                   especialistas em robotização desenham a melhor
                   solução de automação com foco nos objetivos de
                   negócio encontrando melhorias nos processos e
@@ -401,27 +401,27 @@ function Solucoes() {
                       
                     }}>
                    
-                <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 700, fontSize: 17,fontFamily: "Work Sans, sans-seri"}}>Beneficios:</Typography>
+                <Typography sx={{background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4,marginBottom: 4, color: "black", fontWeight: 600, fontSize: 17,fontFamily: "Work Sans, sans-serif"}}>Beneficios:</Typography>
 
                 <Typography sx={{ marginBottom: 2, color: "black",
                     lineHeight:  1.2,
-                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>MELHOR EXPERIÊNCIA DO CLIENTE</span><br></br>
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>MELHOR EXPERIÊNCIA DO CLIENTE</span><br></br>
 Ganhe maior velocidade das operações, qualidade e
 disponibilidade
 </Typography>
                 <Typography sx={{ marginBottom: 2, color: "black",
                     lineHeight:  1.2,
-                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>UMENTO DA AGILIDADE</span><br></br>
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>UMENTO DA AGILIDADE</span><br></br>
 Produtividade de forma ininterrupta para 24×7</Typography>
                 <Typography sx={{ marginBottom: 2, color: "black",
                     lineHeight:  1.2,
-                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>GANHOS DE EFICIÊNCIA OPERACIONAL</span><br></br>
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>GANHOS DE EFICIÊNCIA OPERACIONAL</span><br></br>
 Reduza custos com mão de obra entre 40% e 70%
 em média
 </Typography>
 <Typography sx={{ marginBottom: 2, color: "black",
                     lineHeight:  1.2,
-                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-seri"}}><span style={{fontWeight: 700}}>GARANTIA DE CONFORMIDADE</span><br></br>
+                     fontSize: 16, fontWeight: 400,fontFamily: "Work Sans, sans-serif"}}><span style={{fontWeight: 600}}>GARANTIA DE CONFORMIDADE</span><br></br>
 Aumente a qualidade com redução de 100% dos
 erros</Typography>
                 </Box>
@@ -436,7 +436,7 @@ erros</Typography>
           <CustomTabPanel value={value} index={2} dir={theme.direction}>
             <Grid container xs={12} sx={{height:"100%"}} gap={4}>  
               <Grid item xl={4} sm={12} sx={{height:"100%"}} >
-              <Box  sx={{height: {xl: 700,xl:600, sm: 400} }}>
+              <Box  sx={{height: {xl: 600,xl:600, sm: 400} }}>
                 <Box
                   component="img"
                   sx={{
@@ -462,16 +462,16 @@ erros</Typography>
                     
 
                   }}>
-               <Typography sx={{ color: "black",letterSpacing: 1.1,fontFamily: "Work Sans, sans-se",
-                  lineHeight:  1.2,
+               <Typography sx={{ color: "black",letterSpacing: 1.1,
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Integrações entre softwares de uma forma fácil.
                     Podemos integrar quaisquer softwares com
                     qualquer tecnologia</Typography>
                     <Typography sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
-                     }}><span style={{fontWeight: 700}}>Exemplos de integrações</span><br></br>
+                     }}><span style={{fontWeight: 600}}>Exemplos de integrações</span><br></br>
                     Envio de relatórios de um sitema ERP para BI<br></br>
                     Envio de relatórios de CRM para Google Sheeets<br></br>
                     Integrar um ERP com um CRM<br></br>
@@ -483,8 +483,8 @@ erros</Typography>
                   lineHeight:  1.2,
                    fontSize: 16, marginBottom: 4,
 
-                   fontFamily: "Work Sans, sans-se",
-                  background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4, color: "black", fontWeight: 700
+                   fontFamily: "Work Sans, sans-serif",
+                  background: "#C4F015", padding: 2, paddingTop: 4, paddingBottom:4, color: "black", fontWeight: 600
 
 
                      }}>Faça integrações de software
@@ -503,9 +503,9 @@ erros</Typography>
                     }}>
                    
                    <Typography  sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
-                     }}><span style={{fontWeight: 700}}>1. Escolha o software de origem e destino</span><br></br>
+                     }}><span style={{fontWeight: 600}}>1. Escolha o software de origem e destino</span><br></br>
 A Botgeek pode integrar qualquer software com
 outro software, diferentes tipos de softwares, com
 diferentes métodos de conexão entre elas.<br></br>
@@ -515,9 +515,9 @@ webhook, Google Sheets<br></br>
 - Automatize seus processos e saia do manual</Typography>
 
                 <Typography sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
-                     }}><span style={{fontWeight: 700}}>2. Defina o objetivo</span><br></br>
+                     }}><span style={{fontWeight: 600}}>2. Defina o objetivo</span><br></br>
 Defina qual o objetivo de sua integração, que pode
 ser desde facilitar um pequeno processo que é feito
 manualmente até automatizar grandes tarefas e
@@ -527,9 +527,9 @@ B. Quais dados deseja enviar para o outro sistema
 C. Ou, qual tarefa deve ser automatizada
 </Typography>
                 <Typography sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
-                     }}><span style={{fontWeight: 700}}>3. Deixe conosco</span><br></br>
+                     }}><span style={{fontWeight: 600}}>3. Deixe conosco</span><br></br>
 - Deixe conosco. Você chegou ao lugar certo, entre
 em contato e em poucos minutos te passaremos
 um orçamento sobre sua integração, rápido e fácil</Typography>
@@ -545,7 +545,7 @@ um orçamento sobre sua integração, rápido e fácil</Typography>
           <CustomTabPanel value={value} index={3} dir={theme.direction}>
             <Grid container xs={12} sx={{height:"100%"}} gap={4}>  
               <Grid item xl={4} sm={12} sx={{height:"100%"}} >
-              <Box  sx={{height: {xl: 700,xl:600, sm: 400} }}>
+              <Box  sx={{height: {xl: 600,xl:600, sm: 400} }}>
                 <Box
                   component="img"
                   sx={{
@@ -572,7 +572,7 @@ um orçamento sobre sua integração, rápido e fácil</Typography>
 
                   }}>
               <Typography  sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Somos uma equipe de profissionais apaixonados
 por design, especializados em criar experiências
@@ -582,7 +582,7 @@ design de interface do usuário (UI) e design de
 experiência do usuário (UX).
 </Typography>
                     <Typography  sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>O design é uma parte fundamental de qualquer
 projeto, pois influencia diretamente a forma como
@@ -590,7 +590,7 @@ as pessoas interagem e se envolvem com um
 produto ou serviço.</Typography >
 
                     <Typography  sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Quando se trata de UX, colocamos o usuário no
 centro de tudo o que fazemos. Realizamos
@@ -609,7 +609,7 @@ público-alvo, suas expectativas e desejos.</Typography>
                    
                    <Typography
                    sx={{ color: "black",letterSpacing: 1.2,
-                   lineHeight:  1.4,fontFamily: "Work Sans, sans-se",
+                   lineHeight:  1.4,fontFamily: "Work Sans, sans-serif",
                     fontSize: 16, fontWeight: 400, marginBottom: 4
                       }}
                 >Por outro lado, o design de interface do usuário (UI)
@@ -621,7 +621,7 @@ público-alvo, suas expectativas e desejos.</Typography>
                 </Typography>
 
                 <Typography  sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Nosso objetivo é criar designs que não apenas
                 sejam visualmente agradáveis, mas também
@@ -629,7 +629,7 @@ público-alvo, suas expectativas e desejos.</Typography>
                 engajamento dos usuários.
                 </Typography>
                 <Typography  sx={{ color: "black",letterSpacing: 1.1,
-                  lineHeight:  1.2,fontFamily: "Work Sans, sans-se",
+                  lineHeight:  1.2,fontFamily: "Work Sans, sans-serif",
                    fontSize: 16, fontWeight: 400, marginBottom: 4
                      }}>Entre em contato conosco hoje mesmo para
                   discutir suas ideias e descobrir como podemos
