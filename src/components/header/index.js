@@ -60,6 +60,26 @@ function Header() {
   };
 
 
+  
+  React.useEffect(() => {
+    const handleScroll = () => {
+      const sections = pages.map(page => document.getElementById(page.id));
+      const scrollPosition = window.scrollY + (window.innerHeight / 2);
+
+      for (const section of sections) {
+        if (section && scrollPosition >= section.offsetTop) {
+          setActiveSection(section.id);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
   return (
     <AppBar position="fixed" sx={{background: "rgba(0,0,0,0.7)",zIndex: 9999,borderBottom: "1px solid #C4F015"}}>
       <Container maxWidth="xl"  sx={{zIndex: 9999}}>
@@ -98,6 +118,7 @@ function Header() {
           <Box sx={{ flexGrow:1 }}>
            
           </Box>
+         
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
         {pages.map((page) => (
           <Button

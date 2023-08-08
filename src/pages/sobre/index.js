@@ -194,7 +194,7 @@ function Sobre() {
                   alt="The house from the offer."
                   src={Visao}
                 />
-                <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri",color:"black",textTransform:"capitalize"}}>Visão</Typography>
+                <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-serif",color:"black",textTransform:"capitalize"}}>Visão</Typography>
                 </BoxMissionValueVision>
 
                 <BoxMissionValueVision  onClick={() => handleButtonClick("Valor")}
@@ -211,7 +211,7 @@ function Sobre() {
                     alt="The house from the offer."
                     src={Valores}
                   />
-                  <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri",color:"black",textTransform:"capitalize"}}>Valores</Typography>
+                  <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-serif",color:"black",textTransform:"capitalize"}}>Valores</Typography>
                 </BoxMissionValueVision>
              </Box>
              

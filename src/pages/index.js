@@ -12,71 +12,26 @@ import Footer from '../components/footer'
 const BoxInicio = styled(Box)(({ theme }) => ({}));
 
 function PageHome() {
-  const [isScrolling, setIsScrolling] = useState(false);
-  const sections = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (!isScrolling) {
-        setIsScrolling(true);
-        const scrollTimeout = setTimeout(() => {
-          setIsScrolling(false);
-        }, 1000); // Defina aqui o tempo que deseja esperar após a rolagem automática parar antes de ativá-la novamente
-        return () => clearTimeout(scrollTimeout);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [isScrolling]);
-
-  useEffect(() => {
-    if (isScrolling) {
-      const scrollInterval = setInterval(scrollToNextSection, 5000); // Rolará para a próxima seção a cada 5 segundos
-      return () => {
-        clearInterval(scrollInterval);
-      };
-    }
-  }, [isScrolling]);
-
-  const scrollToNextSection = () => {
-    const currentIndex = sections.findIndex((section) => {
-      const element = document.getElementById(section);
-      return element && element.getBoundingClientRect().top >= 0;
-    });
-
-    if (currentIndex !== -1 && currentIndex < sections.length - 1) {
-      const nextSection = document.getElementById(sections[currentIndex + 1]);
-      if (nextSection) {
-        nextSection.scrollIntoView({ behavior: 'smooth' });
-      }
-    } else {
-      setIsScrolling(false);
-    }
-  };
-
+  
   return (
     <BoxInicio>
-      <Header id="" />
-      <div className="section" id="section1">
+      <Header  />
+      <div className="section" id="inicio">
         <Inicio />
       </div>
-      <div className="section" id="section2">
+      <div className="section" id="sobre">
         <Sobre />
       </div>
-      <div className="section" id="section3">
+      <div className="section" id="solucoes">
         <Solucoes />
       </div>
-      <div className="section" id="section4">
+      <div className="section" id="clientes">
         <Clientes />
       </div>
-      <div className="section" id="section5">
+      <div className="section" id="contato">
         <Contato />
       </div>
-      <div className="section" id="section6">
+      <div className="section" id="footer">
         <Footer />
       </div>
     </BoxInicio>

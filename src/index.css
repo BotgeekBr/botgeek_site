@@ -38,6 +38,11 @@ code {
   src: url('./fonts/logik/Logik-Extended.ttf');
 }
 
+.active-menu-item {
+  font-weight: bold; /* Adicione negrito */
+  background-color: #C4F015; /* Defina a cor de destaque para o item ativo */
+  border-radius: 5px; /* Adicione borda arredondada para destacar */
+}
 
 
 
