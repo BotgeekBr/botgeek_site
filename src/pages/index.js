@@ -16,24 +16,24 @@ function PageHome() {
   return (
     <BoxInicio>
       <Header  />
-      <div className="section" id="inicio">
+      <section className="section section-1" id="inicio">
         <Inicio />
-      </div>
-      <div className="section" id="sobre">
+      </section>
+      <section className="section section-2" id="sobre">
         <Sobre />
-      </div>
-      <div className="section" id="solucoes">
+      </section>
+      <section className="section section-3" id="solucoes">
         <Solucoes />
-      </div>
-      <div className="section" id="clientes">
+      </section>
+      <section className="section section-4" id="clientes">
         <Clientes />
-      </div>
-      <div className="section" id="contato">
+      </section>
+      <section className="section section-5" id="contato">
         <Contato />
-      </div>
-      <div className="section" id="footer">
+      </section>
+      <section className="section section-6" id="footer">
         <Footer />
-      </div>
+      </section>
     </BoxInicio>
   );
 }
