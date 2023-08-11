@@ -15,6 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { Instagram } from '@mui/icons-material';
 import LogoBootGeek from "../../assets/BOT-0001-23 Brand_VF-06.png"
 import { Link } from '@mui/material';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const pages = [
 
@@ -197,8 +198,9 @@ function Header() {
              
               color="inherit"
               sx={{marginLeft: "10%"}}
+              href='https://api.whatsapp.com/send?phone=554191722778&text=Bem%20vindo%20a%20BootGeek.%20'
             >
-              <Instagram style={{color: "#C4F015"}} />
+                   <WhatsAppIcon  sx={{color: '#C4F015'}}/>
             </IconButton>
         </Toolbar>
         

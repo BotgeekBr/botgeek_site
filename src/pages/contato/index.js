@@ -153,7 +153,7 @@ function Contato() {
                                       component="img"
                                     
                                       alt="The house from the offer."
-
+sx={{display: {xl:"flex", lg:"flex", md:"flex", sm:"none", xs:"none"}}}
                                       src={ImageBoxDesenvolvimento}
                                     />
                       

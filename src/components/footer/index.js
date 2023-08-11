@@ -57,7 +57,7 @@ export default function Footer(props) {
                 </ListItem>
 
                 <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItemButton href='https://api.whatsapp.com/send?phone=554191722778&text=Bem%20vindo%20a%20BootGeek.%20'>
                     <ListItemIcon>
                       <WhatsAppIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
@@ -76,21 +76,26 @@ export default function Footer(props) {
               </List>
             </nav>
 
-            <Box>
-             
-              
-              
-              <ListItem disablePadding sx={{marginTop: 8}}>
-                  <ListItemButton>
-                    <ListItemIcon>
-                      <CopyrightIcon  sx={{color: 'rgba(255,255,255,0.7)',fontSize: 15}} />
-                    </ListItemIcon>
-                    <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px",color: "rgba(255,255,255,0.7)"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
-                  </ListItemButton>
-                </ListItem>
-              
-             
-            </Box>
+                  <Box sx={{ display: {xl: "none",lg:"none", md: "flex", sm:"flex", xs: "flex"} ,justifyContent:"center", alignItems:'center', color: 'white'}}>
+                    <ListItem disablePadding sx={{marginTop: 8}}>
+                        <ListItemButton>
+                        <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5),'}}    primary="Desenvolvido por: " ></ListItemText>
+
+                          <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",marginLeft:1,fontSize: '10px', color: 'rgba(255,255,255,1)'}}    primary=" Lança Design e Botgeek" ></ListItemText>
+                        </ListItemButton>
+                      </ListItem>
+                  </Box>   
+                  <Box sx={{ display: {xl: "flex",lg:"flex", md: "none", sm:"none", xs: "none"} }}>
+
+                    <ListItem disablePadding sx={{marginTop: 8}}>
+                      <ListItemButton>
+                        <ListItemIcon>
+                          <CopyrightIcon  sx={{color: 'rgba(255,255,255,0.7)',fontSize: 15}} />
+                        </ListItemIcon>
+                        <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px",color: "rgba(255,255,255,0.7)"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
+                      </ListItemButton>
+                    </ListItem>
+                  </Box>
         </Box>
           </Grid>
 
@@ -136,7 +141,7 @@ export default function Footer(props) {
 
                   </Box>  
 
-                  <Box sx={{ display: "flex",justifyContent:"center", alignItems:'center', color: 'white'}}>
+                  <Box sx={{ display: {xl: "flex",lg:"flex", md: "none", sm:"none", xs: "none"} ,justifyContent:"center", alignItems:'center', color: 'white'}}>
                     <ListItem disablePadding sx={{marginTop: 8}}>
                         <ListItemButton>
                         <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5),'}}    primary="Desenvolvido por: " ></ListItemText>
@@ -145,6 +150,17 @@ export default function Footer(props) {
                         </ListItemButton>
                       </ListItem>
                   </Box>   
+                  <Box sx={{ display: {xl: "none",lg:"none", md: "flex", sm:"flex", xs: "flex"} }}>
+
+                    <ListItem disablePadding sx={{marginTop: 8}}>
+                      <ListItemButton>
+                        <ListItemIcon>
+                          <CopyrightIcon  sx={{color: 'rgba(255,255,255,0.7)',fontSize: 15}} />
+                        </ListItemIcon>
+                        <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px",color: "rgba(255,255,255,0.7)"}}    primary="2023 Botgeek | Todos os direitos reservados" ></ListItemText>
+                      </ListItemButton>
+                    </ListItem>
+                  </Box>
         </Box>
           </Grid>
         </Grid>

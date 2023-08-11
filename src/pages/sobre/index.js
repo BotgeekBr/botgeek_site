@@ -254,7 +254,7 @@ function Sobre() {
         <Grid item  xs={12} sx={{padding: {xl:15, lg:10, sm:0, xs: 0}, marginTop: 10, display:"flex", justifyContent: "center"}}>
         <Box sx={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%", marginTop: 10}}>
                 
-        <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center", height:"100vh"}}>
+        <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center"}}>
                   <BoxMissionValueVision sx={{opacity:"1"}}   
               >
                     <Box
