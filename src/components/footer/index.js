@@ -66,7 +66,7 @@ export default function Footer(props) {
                 </ListItem>
 
                 <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItemButton href='https://www.instagram.com/botgeek_/'>
                     <ListItemIcon>
                       <InstagramIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
