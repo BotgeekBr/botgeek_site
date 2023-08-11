@@ -48,7 +48,7 @@ export default function Footer(props) {
               <List >
 
                 <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItemButton href='mailto:contato@botgeek.com.br'>
                     <ListItemIcon>
                       <EmailIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
