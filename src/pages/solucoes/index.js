@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import {Box, Grid, Tab, Tabs, Typography} from "@mui/material"
+import React, { useEffect, useRef, useState } from "react";
+import {AppBar, Box, Grid, Tab, Tabs, Typography} from "@mui/material"
 import { styled, useTheme } from '@mui/material/styles';
 
 import PropTypes from 'prop-types';
@@ -49,29 +49,17 @@ const BoxInicio= styled(Box)(({ theme }) => ({
 
 
 
-  const BoxTabs= styled(Box)(({ theme }) => ({
-    display: "flex",
-    flexDirection: "row",
-    [theme.breakpoints.down('sm')]: {
-        flexDirection: "column",
-      }
-  }));
+ 
   function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;
   
     return (
-      <div
-        role="tabpanel"
-        hidden={value !== index}
-        id={`simple-tabpanel-${index}`}
-        aria-labelledby={`simple-tab-${index}`}
-        {...other}
-      >
-        {value === index && (
+      <div style={{ display: value === index ? 'block' : 'none' }}>
+       
           <Box sx={{ p: 3 }}>
             <Typography>{children}</Typography>
           </Box>
-        )}
+        
       </div>
     );
   }
@@ -85,25 +73,27 @@ const BoxInicio= styled(Box)(({ theme }) => ({
   function a11yProps(index) {
     return {
       id: `simple-tab-${index}`,
-      'aria-controls': `simple-tabpanel-${index}`,
+      "aria-controls": `simple-tabpanel-${index}`
     };
   }
+  
+ 
+
   
 
 function Solucoes() {
 
   const theme = useTheme();
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
-  const handleChangeIndex = (index) => {
-    setValue(index);
-  };
   
+ 
 
+  
 
   return (
     <div name="solucoes" id="solucoes" >
@@ -111,13 +101,16 @@ function Solucoes() {
     <BoxInicio >
        
           <BoxDesktop>
-            <Tabs
-              value={value}
-              onChange={handleChange}
-              variant="scrollable"
-              scrollButtons
-              allowScrollButtonsMobile
-              aria-label="scrollable force tabs example"
+            {/* <Tabs
+                ref={tabsRef}
+                value={value}
+                onChange={handleTabScrollChange}
+                variant="scrollable"
+                scrollButtons="auto"
+                aria-label="scrollable force tabs example"
+                onScroll={handleTabScroll}
+                allowScrollButtonsMobile
+             
               sx={{
 
                 
@@ -146,115 +139,83 @@ function Solucoes() {
                       />
 
 
-                      <Tab    
+                    
+
+            </Tabs> */}
+
+            <AppBar position="static" color="inherit">
+            <Tabs
+              variant="scrollable"
+              allowScrollButtonsMobile
+              value={value}
+              onChange={handleChange}
+              sx={{
+
+                
+                "& button:hover": {backgroundColor: "#C4F015"},
+                "& button:active": {backgroundColor: "#C4F015"},
+                "& button:focus": {backgroundColor: "#C4F015"},
+                "& button.Mui-selected": {backgroundColor: "#C4F015", color: "black"},
+                }}
+              aria-label="simple tabs example"
+            >
+        <Tab    
                         label={
                           <Typography
                             sx={{
                               fontFamily: "Logik",
                               color: "black",
-                              lineHeight: 1,
-                              letterSpacing: 0.2,
-                              fontWeight: 600, fontSize: 20
-                            }}>  Automação<br />RPA </Typography>}
+                             
+                              fontWeight: 600, fontSize: 8
+                          }}> Desenvolvimento de Apps e software</Typography>}
+                        sx={{ padding: 2,background: "rgba(0,0,0,0.1)",
+                              width: "50%",                    
+                              maxWidth: {sm: 100},}} 
+
+
+                      />
+                <Tab    
+                {...a11yProps(1)}
+                        label={
+                          <Typography
+                            sx={{
+                              fontFamily: "Logik",
+                              color: "black",
+                             
+                              fontWeight: 600, fontSize: 8
+                            }}>  Automação RPA </Typography>}
                         sx={{ padding: 3,
                               background: "rgba(0,0,0,0.1)",
-                              width: "100%",                    
-                              maxWidth: {sm: 300}, }}
+                              width: "50%",                    
+                              maxWidth: {sm: 100}, }}
                       />
 
 
-<Tab    label={<Typography
+<Tab     {...a11yProps(2)}
+label={<Typography
                           sx={{
                             fontFamily: "Logik",
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 600, fontSize: 20
-                          }}> Integrações<br />de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
+                            fontWeight: 600, fontSize: 10
+                          }}> Integrações de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "50%",                    maxWidth: {sm: 100},}}/>
 
 
-<Tab    label={<Typography
+<Tab   {...a11yProps(3)}   label={<Typography
                           sx={{
                             fontFamily: "Logik",
                             color: "black",
                             lineHeight: 1,
                             letterSpacing: 0.2,
-                            fontWeight: 600, fontSize: 20
-                          }}> Design<br />ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "100%",                    maxWidth: {sm: 300},}}/>
-
+                            fontWeight: 600, fontSize: 10
+                          }}> Design ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)",width: "50%",                    maxWidth: {sm: 100},}}/>
 
             </Tabs>
+          </AppBar>
           </BoxDesktop>
 
-          <BoxOthersConfigs>
-          <Tabs
-              value={value}
-              onChange={handleChange}
-              
-              textColor="inherit"
-              variant="fullWidth"
-              aria-label="full width tabs example"
-              sx={{display: {sm: "none" , md: "none", xl: "flex", width: "90%" ,
-            
-              
-              "& button:hover": {backgroundColor: "#C4F015"},
-              "& button:active": {backgroundColor: "#C4F015"},
-              "& button:focus": {backgroundColor: "#C4F015"},
-              "& button.Mui-selected": {backgroundColor: "#C4F015", color: "black"},
-          
-            }}}
-          >
-            <Tab    label={<Typography
-                          sx={{
-                            fontFamily: "Logik",
-                            color: "black",
-                            lineHeight: 1,
-                            letterSpacing: 0.2,
-                            fontWeight: 600, fontSize: 20
-                          }}
-                        > Desenvolvimento<br />de Apps e <br />software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
-
-
-<Tab    label={<Typography
-                          sx={{
-                            fontFamily: "Logik",
-                            color: "black",
-                            lineHeight: 1,
-                            letterSpacing: 0.2,
-                            fontWeight: 600, fontSize: 20
-                          }}
-                        > Automação<br />RPA </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
-
-
-<Tab    label={<Typography
-                          sx={{
-                            fontFamily: "Logik",
-                            color: "black",
-                            lineHeight: 1,
-                            letterSpacing: 0.2,
-                            fontWeight: 600, fontSize: 20
-                          }}
-                        > Integrações<br />de software</Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
-
-
-<Tab    label={<Typography
-                          sx={{
-                            fontFamily: "Logik",
-                            color: "black",
-                            lineHeight: 1,
-                            letterSpacing: 0.2,
-                            fontWeight: 600, fontSize: 20
-                          }}
-                        > Design<br />ux e Ui </Typography>}sx={{ padding: 3,background: "rgba(0,0,0,0.1)"}}/>
-
-
-
-
-
-
-            
-          </Tabs>
-          </BoxOthersConfigs>
+       
 
         <Box
      
