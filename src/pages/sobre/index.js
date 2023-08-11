@@ -126,14 +126,14 @@ function Sobre() {
 
   return (
     <div name="sobre" id="sobre">
-            <Box sx={{display:"flex",justifyContent:"center",alignItems:"center"}}>
+            <Box sx={{display:"flex",justifyContent:"center",alignItems:"center",height:"100%"}}>
 
     <BoxInicio >
 
       
      
      
-      <Grid container xs={12}> 
+      <Grid container xs={12} sx={{display:{xl:"flex", lg:"flex", md:"none", sm: "none", xs:"none"}}}> 
         <Grid item lg={5} md={12} sm={12} xs={12} sx={{padding: {xl:15, lg:10, sm:0, xs: 0}, marginTop: 10, display:"flex", justifyContent: "center"}}>
           <BoxConteudo >
               <TextConteudo>A Botgeek é uma empresa formacional,
@@ -225,10 +225,100 @@ function Sobre() {
         </Grid>
       </Grid>
 
-      {/* <BoxDivs sx={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", width: "100%", marginTop: 10}}>
-              
-            
-      </BoxDivs> */}
+      <Grid container xs={12} sx={{display:{xl:"none", lg:"none", md:"flex", sm: "flex", xs:"flex"} }}> 
+        <Grid item  xs={12} sx={{padding: {xl:15, lg:10, sm:0, xs: 0}, marginTop: 10, display:"flex", justifyContent: "center"}}>
+          <BoxConteudo >
+              <TextConteudo>A Botgeek é uma empresa formacional,
+                temos um projeto de formação de pessoas e
+                capacitação delas. Mas melhor que isso, a
+                Botgeek no final da formação, contrata os
+                melhores alunos para que eles possam já
+                sair do curso atuando em projetos reais e
+                inovadores no mercado real. <br></br><br></br>
+                A Botgeek também é uma empresa que
+                acredita em princípios bíblicos, temos nossa
+                visão , missão e valores pautados na palavra
+                de Deus, com objetivo de construir cada vez 
+                mais uma sociedade melhor.
+                </TextConteudo>
+
+                <Divider sx={{color: "#C4F015",background: "#C4F015", width: "100%", marginBottom: "8%", marginTop: "8%"}}></Divider>
+
+                <TextLastConteudo>Nos somos uma empresa sustentável, com
+                  princípios sustentáveis.
+                  Venha nos conhecer melhor, marque uma
+                  conversa conosco.
+                </TextLastConteudo>
+          </BoxConteudo>
+        </Grid>
+        <Grid item  xs={12} sx={{padding: {xl:15, lg:10, sm:0, xs: 0}, marginTop: 10, display:"flex", justifyContent: "center"}}>
+        <Box sx={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "100%", marginTop: 10}}>
+                
+        <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center", height:"100vh"}}>
+                  <BoxMissionValueVision sx={{opacity:"1"}}   
+              >
+                    <Box
+                      component="img"
+                        sx={{
+                          height: "100%",
+                          width: "100%",
+                          width: {xl: "200px", lg:"200px" ,sm:"85px" ,xs:"85px"},
+                          maxWidth: { xs: 200, md: 250,sm:250 },
+                          
+                        }}
+                      alt="The house from the offer."
+                      src={Missao}
+                    />
+                    <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-seri",color:"black",textTransform:"capitalize"}}>Missão</Typography>
+                  </BoxMissionValueVision>
+                  <BoxMission />
+                </Box>
+
+                <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center"}}>
+                  <BoxMissionValueVision sx={{ marginLeft: 10, marginRight: 10,opacity:"1" }}   
+              selected={selectedContent === "Visão"}>
+                    <Box
+                    component="img"
+                      sx={{
+                        height: "100%",
+                        width: "100%",
+                        width: {xl: "200px", lg:"200px" ,sm:"85px" ,xs:"85px"},
+                        maxWidth: { xs: 200, md: 250,sm:250 },
+                        
+                      }}
+                    alt="The house from the offer."
+                    src={Visao}
+                  />
+                  <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-serif",color:"black",textTransform:"capitalize"}}>Visão</Typography>
+                  </BoxMissionValueVision>
+                  <BoxVision />
+                </Box>
+
+                <Box sx={{display:"flex", flexDirection:"column", justifyContent:"center",alignItems:"center"}}>
+                  <BoxMissionValueVision sx={{opacity:"1"}}  
+             >
+                    <Box
+                      component="img"
+                        sx={{
+                          height: "100%",
+                          width: "100%",
+                          width: {xl: "200px", lg:"200px" ,sm:"85px" ,xs:"85px"},
+                          maxWidth: { xs: 200, md: 250,sm:250 },
+                          
+                        }}
+                      alt="The house from the offer."
+                      src={Valores}
+                    />
+                    <Typography sx={{fontSize: 20, fontWeight: 700, marginTop: 4, textAlign: "center",fontFamily: "Work Sans, sans-serif",color:"black",textTransform:"capitalize"}}>Valores</Typography>
+                  </BoxMissionValueVision>
+                  <BoxValue />
+                </Box>
+             
+             
+                </Box>
+    
+        </Grid>
+      </Grid>
     </BoxInicio>
     </Box>
     </div>
