@@ -76,7 +76,7 @@ export default function Footer(props) {
               </List>
             </nav>
 
-                  <Box sx={{ display: {xl: "none",lg:"none", md: "flex", sm:"flex", xs: "flex"} ,justifyContent:"center", alignItems:'center', color: 'white'}}>
+                  <Box sx={{ display: {xl: "none",lg:"none", md: "none", sm:"none", xs: "none"} ,justifyContent:"center", alignItems:'center', color: 'white'}}>
                     <ListItem disablePadding sx={{marginTop: 8}}>
                         <ListItemButton>
                         <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5),'}}    primary="Desenvolvido por: " ></ListItemText>
@@ -141,7 +141,7 @@ export default function Footer(props) {
 
                   </Box>  
 
-                  <Box sx={{ display: {xl: "flex",lg:"flex", md: "none", sm:"none", xs: "none"} ,justifyContent:"center", alignItems:'center', color: 'white'}}>
+                  <Box sx={{ display: {xl: "flex",lg:"flex", md: "flex", sm:"flex", xs: "flex"} ,justifyContent:"center", alignItems:'center', color: 'white'}}>
                     <ListItem disablePadding sx={{marginTop: 8}}>
                         <ListItemButton>
                         <ListItemText primaryTypographyProps={{fontFamily: "Work Sans, sans-seri",fontSize: '10px', marginLeft: "-20px" ,color: 'rgba(255,255,255,0.5),'}}    primary="Desenvolvido por: " ></ListItemText>
