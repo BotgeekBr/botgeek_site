@@ -8,7 +8,8 @@ import buttonImage from "../../assets/iconSubmit.png"
 import emailjs from 'emailjs-com'; // Importe a biblioteca emailjs-com
 
 import TextField from '@mui/material/TextField';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const BoxInicio = styled(Box)(({ theme }) => ({
   width: "100%",
   height: "100vh",
@@ -64,12 +65,12 @@ function Contato() {
     // Enviar o formulário usando o serviço de email
     emailjs.send('service_c5m0s6l', 'template_ekfisaa', {
       from_name: name,
-      telefone,
-      email,
-      mensagem,
+      telefone:telefone,
+      emailemail:email,
+      mensagem:mensagem,
     })
       .then((response) => {
-        console.log('Mensagem enviada com sucesso!', response);
+        toast.success('Mensagem enviada com sucesso!');
         // Limpar os campos após o envio
         setName('');
         setTelefone('');
@@ -77,13 +78,14 @@ function Contato() {
         setmensagem('');
       })
       .catch((error) => {
-        console.error('Erro ao enviar a mensagem:', error);
+        toast.error('Erro ao enviar a mensagem:');
       });
   };
 
 
   return (
     <div name="" id="contato">
+      <ToastContainer></ToastContainer>
       <BoxInicio >
         <Box sx={{ width: "100%", height: "100", display: "flex", justifyContent: "center", alignItems: "center" }}>
 
