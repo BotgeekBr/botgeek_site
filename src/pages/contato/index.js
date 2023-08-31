@@ -129,11 +129,19 @@ function Contato() {
                     
                   />
 
-<TextField
+                    <TextField
                     fullWidth
                     id="outlined-controlled"
                     label="Email"
-                    type="email" name="user_email"
+                    type="email" name="from_email"
+                    sx={{ background: "white", marginBottom: 1 }}
+                    
+                  />
+                    <TextField
+                    fullWidth
+                    id="outlined-controlled"
+                    label="Telefone"
+                    type="phone" name="from_telefone"
                     sx={{ background: "white", marginBottom: 1 }}
                     
                   />
@@ -141,7 +149,7 @@ function Contato() {
                     <TextField
                     fullWidth
                     id="outlined-controlled"
-                    label="Message"
+                    label="Menssagem"
                     name="message"
                     sx={{ background: "white", marginBottom: 1 }}
                     
