@@ -5,7 +5,8 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import ImageBoxDesenvolvimento from "../../assets/businessman-touching-icon-mobile-phone-mail-telephone-address.jpg"
 import buttonImage from "../../assets/iconSubmit.png"
-import emailjs from 'emailjs-com'; // Importe a biblioteca emailjs-com
+// import emailjs from 'emailjs-com'; // Importe a biblioteca emailjs-com
+import emailjs from '@emailjs/browser';
 
 import TextField from '@mui/material/TextField';
 import { ToastContainer, toast } from 'react-toastify';
@@ -20,6 +21,7 @@ const BoxInicio = styled(Box)(({ theme }) => ({
 
 
 }));
+
 
 
 const BoxImage = styled(Box)(({ theme }) => ({
@@ -56,28 +58,42 @@ function Contato() {
   const [email, setEmail] = React.useState('');
   const [mensagem, setmensagem] = React.useState('');
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
 
-    // Configurar emailjs
-    emailjs.init('4dOX3BcFcA2f__Tgo');
+  //   // Configurar emailjs
+  //   emailjs.init('4dOX3BcFcA2f__Tgo');
 
-    // Enviar o formulário usando o serviço de email
-    emailjs.send('service_c5m0s6l', 'template_ekfisaa', {
-      from_name: name,
-      telefone:telefone,
-      emailemail:email,
-      mensagem:mensagem,
-    })
-      .then((response) => {
+  //   // Enviar o formulário usando o serviço de email
+  //   emailjs.sendForm('service_c5m0s6l', 'template_ekfisaa', {
+  //     from_name: name,
+  //     telefone:telefone,
+  //     email:email,
+  //     message:mensagem,
+  //   })
+  //     .then((response) => {
+  //       toast.success('Mensagem enviada com sucesso!');
+  //       // Limpar os campos após o envio
+  //       setName('');
+  //       setTelefone('');
+  //       setEmail('');
+  //       setmensagem('');
+  //     })
+  //     .catch((error) => {
+  //       toast.error('Erro ao enviar a mensagem:');
+  //     });
+  // };
+
+
+  const form = React.useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_c5m0s6l', 'template_ekfisaa', form.current, '4dOX3BcFcA2f__Tgo')
+      .then((result) => {
         toast.success('Mensagem enviada com sucesso!');
-        // Limpar os campos após o envio
-        setName('');
-        setTelefone('');
-        setEmail('');
-        setmensagem('');
-      })
-      .catch((error) => {
+      }, (error) => {
         toast.error('Erro ao enviar a mensagem:');
       });
   };
@@ -95,58 +111,47 @@ function Contato() {
             <Grid item xs={2} md={12} sm={12} ></Grid>
 
             <Grid item xl={3} md={6} sm={12} gap={2} sx={{ width: "100%", height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }} >
+            <form ref={form} onSubmit={sendEmail}>
               <Box sx={{ background: "rgba(0,0,0,0.1)", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }} gap={1} >
                 <Box sx={{ padding: 5, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
 
                   <Typography variant='h5' sx={{ fontFamily: "Work Sans, sans-se", marginBottom: 2 }}>Entre em contato para mais informações!</Typography>
                   <Typography variant='p' sx={{ fontFamily: "Work Sans, sans-se", marginBottom: 1 }}>Preencha todos os dados solicitados no formulário.</Typography>
                   <Typography variant='p' sx={{ fontFamily: "Work Sans, sans-se", marginBottom: 2 }}>Aguarde que logo responderemos sua solicitação de contato.</Typography>
-                  <TextField
+                 
+                    
+                    <TextField
                     fullWidth
                     id="outlined-controlled"
-                    label="Nome"
-
-                    sx={{ background: "white", marginBottom: 1, marginBottom: 1 }}
-                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                      setName(event.target.value);
-
-                    }}
-                  />
-                  <TextField
-                    fullWidth
-                    id="outlined-controlled"
-                    label="Telefone"
-
+                    label="Name"
+                    type="text" name="user_name"
                     sx={{ background: "white", marginBottom: 1 }}
-                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                      setTelefone(event.target.value);
-                    }}
+                    
                   />
-                  <TextField
+
+<TextField
                     fullWidth
                     id="outlined-controlled"
                     label="Email"
+                    type="email" name="user_email"
                     sx={{ background: "white", marginBottom: 1 }}
-
-                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                      setEmail(event.target.value);
-                    }}
+                    
                   />
-                  <TextField
+                    
+                    <TextField
                     fullWidth
                     id="outlined-controlled"
-                    label="Mensagem"
+                    label="Message"
+                    name="message"
                     sx={{ background: "white", marginBottom: 1 }}
-
-                    onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
-                      setmensagem(event.target.value);
-                    }}
+                    
                   />
+                 
                 </Box>
 
-                <Box sx={{ display: "flex", justifyContent: "flex-end", alignItems: "right", width: "100%" }}><IconButton onClick={handleSubmit}> <Box component={"img"} src={buttonImage}></Box></IconButton> </Box>
+                <Box sx={{ display: "flex", justifyContent: "flex-end", alignItems: "right", width: "100%" }}><IconButton type="submit" value="Send"> <Box component={"img"} src={buttonImage}></Box></IconButton> </Box>
               </Box>
-
+              </form>
             </Grid>
 
             <Grid item xl={5} md={6} sm={12} sx={{ height: "100%", display: "flex", justifyContent: "center", alignItems: "center" }} >
