@@ -62,7 +62,7 @@ function Contato() {
     emailjs.init('4dOX3BcFcA2f__Tgo');
 
     // Enviar o formulário usando o serviço de email
-    emailjs.send('service_c5m0s6l', 'template_0xQJyF3FrJ', {
+    emailjs.send('service_c5m0s6l', 'template_ekfisaa', {
       from_name: name,
       telefone,
       email,
