@@ -57,7 +57,7 @@ export default function Footer(props) {
                 </ListItem>
 
                 <ListItem disablePadding>
-                  <ListItemButton href='https://api.whatsapp.com/send?phone=554191722778&text=Bem%20vindo%20a%20BootGeek.%20'>
+                  <ListItemButton href='https://api.whatsapp.com/send?phone=554191722778&text=Gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20os%20servi%C3%A7os%20da%20Botgeek.%0A%0A'>
                     <ListItemIcon>
                       <WhatsAppIcon  sx={{color: '#C4F015'}}/>
                     </ListItemIcon>
